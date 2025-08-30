@@ -1,0 +1,128 @@
+{
+  "header": {
+    "home": "Home",
+    "hotels": "Hotels",
+    "explore": "Explore",
+    "restaurants": "Restaurants",
+    "about": "About",
+    "profile": "Profile",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "dark_mode": "Dark Mode",
+    "light_mode": "Light Mode",
+    "login_required": "Please login to access this page."
+  },
+  "login": {
+    "title": "Sign In",
+    "welcome_back": "Welcome Back!",
+    "prompt_message": "Enter your username and password to continue.",
+    "username": "Enter User Name",
+    "password": "Enter Password",
+    "button": "Login",
+    "no_account": "Don't have an account?",
+    "register_link": "Register here",
+    "invalid_credentials": "Invalid username or password!",
+    "success": "Login successful!"
+  },
+  "register": {
+    "title": "Register Account",
+    "welcome": "Join Us!",
+    "prompt_message": "Create your account to start your journey.",
+    "username": "Enter Username",
+    "password": "Enter Password",
+    "confirm_password": "Confirm Password",
+    "button": "Register",
+    "have_account": "Already have an account?",
+    "login_link": "Login here",
+    "username_exists": "This username is already taken.",
+    "password_mismatch": "Passwords do not match!",
+    "success": "Registration successful! Please login."
+  },
+  "alerts": {
+    "required": "Username and password are required!"
+  },
+  "home": {
+    "hero_title": "Start Your Indonesian Adventure!",
+    "hero_subtitle": "Plan your trip with ease, discover hidden gems, and craft memories that last a lifetime.",
+    "top_rated": "Top Rated Destinations",
+    "view_more": "View More"
+  },
+  "explore": {
+    "title": "Explore Indonesia",
+    "subtitle": "Discover places, activities, and culinary experiences.",
+    "filter_by": "Filter by",
+    "sort_by": "Sort by",
+    "rating": "Rating",
+    "name": "Name (a-z)",
+    "location": "Location",
+    "show_more": "Show More",
+    "all": "All",
+    "no_data": "No Data"
+  },
+  "about": {
+    "title": "About TripID",
+    "description": "TripID is a platform that connects travelers with the best experiences across Indonesia. From hidden gems to famous spots, we help you plan your perfect journey.",
+    "mission_title": "Our Mission",
+    "mission_text": "To make traveling easy, accessible, and unforgettable for everyone."
+  },
+  "profile": {
+    "title": "My Profile",
+    "wishlist": "Wishlist",
+    "wishlist_desc": "Places you saved to visit later.",
+    "reviews": "My Reviews",
+    "reviews_desc": "Manage and edit your reviews.",
+    "dark_mode": "Dark Mode",
+    "logout": "Logout",
+    "confirm_logout": "Are you sure you want to logout?"
+  },
+  "footer": {
+    "description": "Connecting travelers with the best destinations, hotels, and restaurants in Indonesia.",
+    "quick_links": "Quick Links",
+    "contact": "Contact",
+    "follow_us": "Follow Us",
+    "rights_reserved": "All rights reserved.",
+    "menu": {
+      "home": "Home",
+      "about": "About Us",
+      "explore": "Explore",
+      "profile": "Profile"
+    },
+    "contact_info": {
+      "address": "123 Merdeka Street, Jakarta, Indonesia",
+      "phone": "+62 812-3456-7890",
+      "email": "support@tripmate.id"
+    }
+  },
+  "errors": {
+    "not_found": "Oops! Page not found.",
+    "server_error": "Server error. Please try again later."
+  },
+  "buttons": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "add_review": "Add Review",
+    "edit": "Edit",
+    "delete": "Delete"
+  },
+  "trip": {
+    "title": "My Trips",
+    "new_trip": "+ Create new trip",
+    "empty_message": "Plan your first journey by creating a trip.",
+    "form": {
+      "title": "Plan a trip",
+      "name": "Trip name",
+      "name_placeholder": "e.g., Summer vacation in Bali",
+      "destination": "Destination",
+      "destination_placeholder": "Where to?",
+      "cancel": "Cancel",
+      "create": "Create trip"
+    }
+  },
+  "detail": {
+    "back": "Back",
+    "hotel": "Hotel",
+    "restaurant": "Restaurant",
+    "nearby_recommendations": "Near By Recommendations"
+  }
+}

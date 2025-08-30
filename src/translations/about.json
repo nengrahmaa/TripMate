@@ -1,0 +1,80 @@
+{
+  "about": {
+    "title": {
+      "en": "About Our Travel System",
+      "id": "Tentang Sistem Wisata Kami"
+    },
+    "image": "https://i.pinimg.com/1200x/ff/f4/3a/fff43a2e6fe4193ff37a7819d3cfdd37.jpg",
+    "description": {
+      "en": "Welcome to our travel system! This platform is designed to make exploring and managing travel destinations in Indonesia easy and enjoyable. Whether you are planning a weekend getaway, a holiday trip, or just browsing for inspiration, our system provides you with essential tools to discover the best destinations. Currently, we support 5 popular cities: Papua, Bandung, Yogyakarta, Bali, and Medan. Our system is still under development, so expect more cities and exciting features soon!",
+      "id": "Selamat datang di sistem wisata kami! Platform ini dirancang untuk memudahkan kamu menjelajahi dan mengelola destinasi wisata di Indonesia dengan cara yang menyenangkan. Apakah kamu sedang merencanakan liburan akhir pekan, perjalanan panjang, atau hanya mencari inspirasi, sistem kami menyediakan berbagai fitur penting untuk menemukan destinasi terbaik. Saat ini, sistem mendukung 5 kota populer: Papua, Bandung, Yogyakarta, Bali, dan Medan. Sistem ini masih dalam tahap pengembangan, jadi nantikan lebih banyak kota dan fitur menarik segera!"
+    },
+    "services_title": {
+      "en": "Our Services",
+      "id": "Layanan Kami"
+    },
+    "services": [
+      {
+        "icon": "MapPin",
+        "en": "Explore top tourist destinations and hidden gems in each city.",
+        "id": "Menjelajahi destinasi wisata populer dan tempat tersembunyi di setiap kota."
+      },
+      {
+        "icon": "Heart",
+        "en": "Save your favorite spots to a personal wishlist for future visits.",
+        "id": "Simpan tempat favorit ke daftar wishlist pribadi untuk kunjungan mendatang."
+      },
+      {
+        "icon": "Edit3",
+        "en": "Write, edit, and manage your reviews for each destination.",
+        "id": "Menulis, mengedit, dan mengelola ulasan untuk setiap destinasi."
+      },
+      {
+        "icon": "Moon",
+        "en": "Switch between dark mode and light mode for comfortable browsing.",
+        "id": "Beralih antara mode gelap dan terang untuk kenyamanan saat browsing."
+      },
+      {
+        "icon": "UserCheck",
+        "en": "Secure login and personalized profile management.",
+        "id": "Login aman dan pengelolaan profil yang dipersonalisasi."
+      }
+    ],
+    "faq_title": {
+      "en": "Frequently Asked Questions",
+      "id": "Pertanyaan yang Sering Diajukan"
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "How many cities can I explore?",
+          "id": "Berapa banyak kota yang bisa saya jelajahi?"
+        },
+        "answer": {
+          "en": "Currently, you can explore 5 cities: Papua, Bandung, Yogyakarta, Bali, and Medan. More cities will be added soon.",
+          "id": "Saat ini, kamu bisa menjelajahi 5 kota: Papua, Bandung, Yogyakarta, Bali, dan Medan. Kota lain akan ditambahkan segera."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need an account to write reviews?",
+          "id": "Apakah saya perlu akun untuk menulis ulasan?"
+        },
+        "answer": {
+          "en": "Yes, creating an account ensures your reviews are saved and managed properly.",
+          "id": "Ya, membuat akun memastikan ulasan kamu tersimpan dan dikelola dengan baik."
+        }
+      },
+      {
+        "question": {
+          "en": "Can I save my favorite destinations?",
+          "id": "Apakah saya bisa menyimpan destinasi favorit?"
+        },
+        "answer": {
+          "en": "Yes! You can save places to your wishlist after logging in.",
+          "id": "Ya! Kamu bisa menyimpan tempat ke wishlist setelah login."
+        }
+      }
+    ]
+  }
+}

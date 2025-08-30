@@ -1,0 +1,123 @@
+{
+  "header": {
+    "home": "Beranda",
+    "hotels": "Hotel",
+    "explore": "Jelajahi",
+    "restaurants": "Restoran",
+    "about": "Tentang",
+    "profile": "Profil",
+    "login": "Masuk",
+    "register": "Daftar",
+    "logout": "Keluar",
+    "dark_mode": "Mode Gelap",
+    "light_mode": "Mode Terang",
+    "login_required": "Silakan login untuk mengakses halaman ini."
+  },
+  "login": {
+    "title": "Masuk",
+    "welcome_back": "Selamat Datang Kembali!",
+    "prompt_message": "Masukkan nama pengguna dan kata sandi untuk melanjutkan.",
+    "username": "Masukkan Nama Pengguna",
+    "password": "Masukkan Kata Sandi",
+    "button": "Masuk",
+    "no_account": "Belum punya akun?",
+    "register_link": "Daftar di sini",
+    "invalid_credentials": "Nama pengguna atau kata sandi salah!",
+    "success": "Login berhasil!"
+  },
+  "register": {
+    "title": "Daftar Akun",
+    "welcome": "Bergabunglah dengan Kami!",
+    "prompt_message": "Buat akun Anda untuk memulai perjalanan.",
+    "username": "Masukkan Nama Pengguna",
+    "password": "Masukkan Kata Sandi",
+    "confirm_password": "Konfirmasi Kata Sandi",
+    "button": "Daftar",
+    "have_account": "Sudah punya akun?",
+    "login_link": "Masuk di sini",
+    "username_exists": "Nama pengguna ini sudah digunakan.",
+    "password_mismatch": "Kata sandi tidak cocok!",
+    "success": "Pendaftaran berhasil! Silakan masuk."
+  },
+  "alerts": {
+    "required": "Nama pengguna dan kata sandi harus diisi!"
+  },
+  "home": {
+    "hero_title": "Mulai Petualanganmu di Indonesia!",
+    "hero_subtitle": "Rencanakan perjalanan dengan mudah, temukan tempat-tempat tersembunyi, dan ciptakan kenangan tak terlupakan.",
+    "search_placeholder": "Cari berdasarkan kota, tempat, atau kategori",
+    "top_rated": "Destinasi Paling Populer",
+    "view_more": "Lihat Selengkapnya"
+  },
+  "explore": {
+    "title": "Jelajahi Indonesia",
+    "subtitle": "Temukan tempat, aktivitas, dan pengalaman kuliner.",
+    "filter_by": "Filter berdasarkan",
+    "sort_by": "Urutkan berdasarkan",
+    "rating": "Rating",
+    "name": "Nama (a-z)",
+    "location": "Lokasi",
+    "show_more": "Lihat Selengkapnya",
+    "all": "Semua",
+    "no_data": "Tidak ada data"
+  },
+  "profile": {
+    "title": "Profil Saya",
+    "wishlist": "Wishlist",
+    "wishlist_desc": "Daftar tempat yang Anda simpan untuk dikunjungi nanti.",
+    "reviews": "Ulasan Saya",
+    "reviews_desc": "Kelola dan edit ulasan Anda.",
+    "dark_mode": "Mode Gelap",
+    "logout": "Keluar",
+    "confirm_logout": "Apakah kamu yakin ingin logout?"
+  },
+  "footer": {
+    "description": "Menghubungkan traveler dengan destinasi, hotel, dan restoran terbaik di Indonesia.",
+    "quick_links": "Tautan Cepat",
+    "contact": "Kontak",
+    "follow_us": "Ikuti Kami",
+    "rights_reserved": "Hak cipta dilindungi.",
+    "menu": {
+      "home": "Beranda",
+      "about": "Tentang Kami",
+      "explore": "Jelajahi",
+      "profile": "Profil"
+    },
+    "contact_info": {
+      "address": "Jl. Merdeka No. 123, Jakarta, Indonesia",
+      "phone": "+62 812-3456-7890",
+      "email": "support@tripmate.id"
+    }
+  },
+  "errors": {
+    "not_found": "Oops! Halaman tidak ditemukan.",
+    "server_error": "Terjadi kesalahan server. Silakan coba lagi nanti."
+  },
+  "buttons": {
+    "save": "Simpan",
+    "cancel": "Batal",
+    "add_review": "Tambah Ulasan",
+    "edit": "Edit",
+    "delete": "Hapus"
+  },
+  "trip": {
+    "title": "Trip Saya",
+    "new_trip": "+ Buat trip baru",
+    "empty_message": "Rencanakan perjalanan pertama Anda dengan membuat trip.",
+    "form": {
+      "title": "Rencanakan perjalanan",
+      "name": "Nama perjalanan",
+      "name_placeholder": "misalnya, Liburan musim panas di Bali",
+      "destination": "Destinasi",
+      "destination_placeholder": "Ke mana?",
+      "cancel": "Batal",
+      "create": "Buat trip"
+    }
+  },
+  "detail": {
+    "back": "Kembali",
+    "hotel": "Hotel",
+    "restaurant": "Restoran",
+    "nearby_recommendations": "Rekomendasi Terdekat"
+  }
+}

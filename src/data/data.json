@@ -1,0 +1,1327 @@
+[
+  {
+    "city": "Papua",
+    "description": {
+      "id": "Papua adalah provinsi di ujung timur Indonesia yang terkenal dengan keindahan alamnya yang luar biasa dan keanekaragaman budaya yang unik. Dari pantai-pantai berpasir putih dengan air laut biru jernih hingga terumbu karang yang memukau, Papua menawarkan pengalaman menyelam yang tak tertandingi, terutama di Raja Ampat yang mendunia. Pegunungan yang menjulang, seperti Pegunungan Jayawijaya, dan lembah-lembah yang asri, seperti Lembah Baliem, memberikan kesempatan bagi para pendaki dan penjelajah untuk menikmati panorama alam yang menakjubkan. Hutan hujan tropis yang lebat dan Taman Nasional Lorentz menghadirkan keanekaragaman hayati yang luar biasa, termasuk flora dan fauna endemik. Selain itu, Papua juga kaya akan budaya lokal dari berbagai suku asli, dengan tradisi, tarian, dan festival yang memikat. Papua adalah surga tersembunyi di Indonesia dengan pantai eksotis, pegunungan menakjubkan, dan budaya yang kaya, menjadikannya destinasi impian bagi pecinta alam, penyelam, petualang, dan penikmat budaya.",
+      "en": "Papua is a province located in the easternmost part of Indonesia, renowned for its extraordinary natural beauty and unique cultural diversity. From pristine white sandy beaches with crystal-clear waters to stunning coral reefs, Papua offers unparalleled diving experiences, especially in the world-famous Raja Ampat. Towering mountains, such as the Jayawijaya range, and lush valleys like the Baliem Valley provide opportunities for hikers and explorers to enjoy breathtaking scenery. Dense tropical rainforests and Lorentz National Park showcase incredible biodiversity, including endemic flora and fauna. Additionally, Papua is rich in local culture from various indigenous tribes, featuring captivating traditions, dances, and festivals. Papua is a hidden paradise in Indonesia, offering exotic beaches, stunning mountains, and rich culture, making it a dream destination for nature lovers, divers, adventurers, and cultural enthusiasts."
+    },
+    "explore": {
+      "id": "Jelajahi Papua",
+      "en": "Explore Papua"
+    },
+    "places": [
+      {
+        "name": {
+          "id": "Raja Ampat",
+          "en": "Raja Ampat"
+        },
+        "description": {
+          "id": "Raja Ampat adalah surga tropis di Papua Barat yang terkenal dengan keindahan alam bawah lautnya yang menakjubkan. Terumbu karang yang berwarna-warni dan kaya akan keanekaragaman hayati menjadikannya salah satu destinasi menyelam terbaik di dunia. Selain menyelam, pengunjung dapat menikmati pulau-pulau eksotis dengan pasir putih, air laut jernih, hutan mangrove, dan panorama matahari terbit serta terbenam yang memukau. Raja Ampat juga menawarkan kesempatan untuk melihat burung cenderawasih, serta berinteraksi dengan budaya lokal masyarakat pedalaman yang ramah. Destinasi ini sempurna bagi pecinta alam, fotografer, dan petualang yang ingin menikmati keajaiban alam Papua secara langsung.",
+          "en": "Raja Ampat is a tropical paradise in West Papua, renowned for its stunning underwater beauty. Its colorful coral reefs and rich marine biodiversity make it one of the best diving destinations in the world. Besides diving, visitors can explore exotic islands with white sandy beaches, crystal-clear waters, mangrove forests, and breathtaking sunrise and sunset views. Raja Ampat also offers opportunities to see the famous birds of paradise and interact with the friendly local communities. This destination is perfect for nature lovers, photographers, and adventurers seeking to experience the wonders of Papua firsthand."
+        },
+        "rating": 4.9,
+        "category": {
+          "id": "pantai",
+          "en": "beach"
+        },
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/85/de/b7/piaynemo.jpg?w=1200&h=-1&s=1",
+        "hotels": [
+          {
+            "name": "Korpak Villa & Resort",
+            "rating": 4.8,
+            "price": {
+              "id": "IDR 2.500.000/malam",
+              "en": "IDR 2,500,000/night"
+            },
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/5d/4d/07/caption.jpg?w=1400&h=-1&s=1"
+          },
+          {
+            "name": "Raja Ampat Dive Lodge",
+            "rating": 4.7,
+            "price": {
+              "id": "IDR 1.800.000/malam",
+              "en": "IDR 1,800,000/night"
+            },
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/b6/80/4f/deluxe-room.jpg?w=1400&h=-1&s=1"
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Ocean Delight",
+            "rating": 4.7,
+            "price": {
+              "id": "IDR 150.000/orang",
+              "en": "IDR 150,000/person"
+            },
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/49/b0/51/caption.jpg?w=1400&h=-1&s=1"
+          },
+          {
+            "name": "Coral Cafe",
+            "rating": 4.5,
+            "price": {
+              "id": "IDR 120.000/orang",
+              "en": "IDR 120,000/person"
+            },
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/c9/45/56/coral-cafe-at-the-museum.jpg?w=2000&h=-1&s=1"
+          }
+        ]
+      },
+      {
+        "name": {
+          "id": "Lembah Baliem",
+          "en": "Valley Baliem"
+        },
+        "description": {
+          "id": "Lembah Baliem terletak di Pegunungan Jayawijaya, Papua, dan terkenal sebagai rumah bagi suku Dani serta budaya tradisional mereka yang kaya. Lembah ini dikelilingi oleh pegunungan yang hijau dan sawah terasering yang indah, memberikan pemandangan alam yang memukau. Pengunjung dapat menyaksikan upacara adat, festival budaya, dan kehidupan sehari-hari masyarakat lokal yang tetap mempertahankan tradisi nenek moyang mereka. Selain itu, Lembah Baliem menjadi tujuan favorit bagi pendaki dan petualang yang ingin menikmati trekking melalui lembah dan perbukitan yang menakjubkan. Destinasi ini memadukan keindahan alam, budaya, dan petualangan dalam satu pengalaman yang tak terlupakan.",
+          "en": "The Baliem Valley, located in the Jayawijaya Mountains of Papua, is renowned as the home of the Dani tribe and their rich traditional culture. The valley is surrounded by lush mountains and beautiful terraced rice fields, offering breathtaking natural scenery. Visitors can witness traditional ceremonies, cultural festivals, and the daily life of local communities who preserve their ancestral traditions. Additionally, Baliem Valley is a favorite destination for hikers and adventurers seeking trekking experiences through stunning valleys and hills. This destination combines natural beauty, culture, and adventure into an unforgettable experience."
+        },
+        "rating": 4.8,
+        "category": {
+          "id": "alam",
+          "en": "nature"
+        },
+        "image": "https://wonderfulindonesia.co.id/wp-content/uploads/2025/07/Vallee_de_Baliem_en_Papouasie_Indonesie_Village_le_matin.webp",
+        "hotels": [
+          {
+            "name": "Baliem Valley Resort",
+            "rating": 4.7,
+            "price": {
+              "id": "IDR 2.000.000/malam",
+              "en": "IDR 2,000,000/night"
+            },
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/26/47/fe/twin-room.jpg?w=1400&h=-1&s=1"
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Valley Feast",
+            "rating": 4.6,
+            "price": {
+              "id": "IDR 100.000/orang",
+              "en": "IDR 100,000/person"
+            },
+            "image": "https://i.pinimg.com/736x/0c/79/7b/0c797bfbedcfb108fbe1b78ab33be379.jpg"
+          }
+        ]
+      },
+      {
+        "name": {
+          "id": "Danau Sentani",
+          "en": "Lake Sentani"
+        },
+        "description": {
+          "id": "Danau Sentani terletak dekat Jayapura, Papua, dan terkenal dengan pemandangan yang menakjubkan serta airnya yang tenang dan jernih. Danau ini dikelilingi oleh perbukitan hijau dan pulau-pulau kecil yang menambah keindahan alamnya. Setiap tahun, Danau Sentani menjadi tuan rumah Festival Danau Sentani, di mana masyarakat lokal menampilkan tarian, musik tradisional, dan kerajinan tangan yang memukau. Pengunjung dapat menikmati berperahu di danau, memancing, atau sekadar bersantai menikmati panorama matahari terbit dan terbenam. Destinasi ini menghadirkan perpaduan sempurna antara alam, budaya, dan ketenangan yang menenangkan jiwa.",
+          "en": "Sentani Lake, located near Jayapura in Papua, is renowned for its stunning scenery and calm, clear waters. The lake is surrounded by green hills and small islands that enhance its natural beauty. Every year, Sentani Lake hosts the Sentani Lake Festival, where local communities showcase traditional dances, music, and handicrafts. Visitors can enjoy boating on the lake, fishing, or simply relaxing while enjoying breathtaking sunrises and sunsets. This destination offers a perfect blend of nature, culture, and serene tranquility."
+        },
+        "rating": 4.7,
+        "category": {
+          "id": "alam",
+          "en": "nature"
+        },
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/e5/10/28/indahnya-perpaduan-birunya.jpg?w=2000&h=-1&s=1",
+        "hotels": [
+          {
+            "name": "Hotel Horison Sentani",
+            "rating": 4.5,
+            "price": {
+              "id": "IDR 1.500.000/malam",
+              "en": "IDR 1,500,000/night"
+            },
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/a7/eb/07/rm-mickey.jpg?w=1100&h=-1&s=1"
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "cafe Efafa",
+            "rating": 4.6,
+            "price": {
+              "id": "IDR 120.000/orang",
+              "en": "IDR 120,000/person"
+            },
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/40/01/01/the-cafe-have-best-view.jpg?w=1400&h=-1&s=1"
+          }
+        ]
+      },
+      {
+        "name": {
+          "id": "Pantai Base-G",
+          "en": "Beach Base-G"
+        },
+        "description": {
+          "id": "Pantai indah dengan pasir putih di Jayapura.",
+          "en": "Beautiful white sand beach in Jayapura."
+        },
+        "rating": 4.6,
+        "category": {
+          "id": "pantai",
+          "en": "beach"
+        },
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/65/61/31/the-rocks.jpg?w=2000&h=-1&s=1",
+        "hotels": [
+          {
+            "name": "Base-G Beach Resort",
+            "rating": 4.5,
+            "price": {
+              "id": "IDR 1.200.000/malam",
+              "en": "IDR 1,200,000/night"
+            },
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/20/92/3d/77/junior-suites.jpg?w=1400&h=-1&s=1"
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Waroenk Kombrof",
+            "rating": 4.4,
+            "price": {
+              "id": "IDR 90.000/orang",
+              "en": "IDR 90,000/person"
+            },
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/66/5b/62/a-friends-for.jpg?w=1400&h=-1&s=1"
+          }
+        ]
+      },
+      {
+        "name": {
+          "id": "Pulau Biak",
+          "en": "Island Biak"
+        },
+        "description": {
+          "id": "Pulau Biak terletak di Provinsi Papua dan dikenal sebagai destinasi wisata dengan pantai berpasir putih, air laut yang jernih, serta sejarah yang kaya. Pulau ini menawarkan pemandangan bawah laut yang memukau, cocok untuk snorkeling dan menyelam, serta berbagai aktivitas pantai lainnya. Selain keindahan alamnya, Pulau Biak memiliki situs sejarah dari masa Perang Dunia II yang menarik untuk dijelajahi. Budaya lokal yang unik, termasuk tarian dan kerajinan tangan tradisional, membuat kunjungan ke Biak menjadi pengalaman yang menyenangkan dan edukatif. Pulau ini merupakan kombinasi sempurna antara alam, sejarah, dan budaya Papua.",
+          "en": "Biak Island, located in Papua Province, is known as a tourist destination with white sandy beaches, clear waters, and a rich history. The island offers stunning underwater scenery, perfect for snorkeling and diving, along with various other beach activities. In addition to its natural beauty, Biak Island has historical sites from World War II that are fascinating to explore. The unique local culture, including traditional dances and handicrafts, makes visiting Biak an enjoyable and educational experience. The island is a perfect combination of nature, history, and Papuan culture."
+        },
+        "rating": 4.7,
+        "category": {
+          "id": "sejarah",
+          "en": "history"
+        },
+        "image": "https://seringjalan.com/wp-content/uploads/2020/05/Pantai-Adoki-Biak.jpg",
+        "hotels": [
+          {
+            "name": "Asana Biak Papua",
+            "rating": 4.6,
+            "price": {
+              "id": "IDR 1.800.000/malam",
+              "en": "IDR 1,800,000/night"
+            },
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/c1/f0/fc/img-20200123-170918-largejpg.jpg?w=1000&h=-1&s=1"
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Biak Seafood Resto",
+            "rating": 4.5,
+            "price": {
+              "id": "IDR 150.000/orang",
+              "en": "IDR 150,000/person"
+            },
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/2e/62/1c/interior.jpg?w=1400&h=800&s=1"
+          }
+        ]
+      },
+      {
+        "name": {
+          "id": "Jayapura City Hill",
+          "en": "Jayapura City Hill"
+        },
+        "description": {
+          "id": "Jayapura City Hill adalah destinasi wisata populer di kota Jayapura, Papua, yang menawarkan pemandangan kota dan Teluk Jayapura dari ketinggian. Tempat ini dikelilingi oleh perbukitan hijau dan merupakan lokasi favorit untuk menikmati matahari terbit dan terbenam. Pengunjung dapat bersantai sambil menikmati udara sejuk, berjalan di jalur hiking ringan, atau berfoto dengan latar panorama kota dan laut yang menakjubkan. Selain itu, lokasi ini juga memberikan wawasan budaya lokal karena berada dekat dengan permukiman tradisional masyarakat Papua.",
+          "en": "Jayapura City Hill is a popular tourist destination in Jayapura, Papua, offering panoramic views of the city and Jayapura Bay from above. Surrounded by green hills, it is a favorite spot for enjoying sunrises and sunsets. Visitors can relax while enjoying the cool air, take a gentle hike, or capture photos with the stunning city and sea panorama. Additionally, the location provides cultural insight as it is close to traditional Papuan communities."
+        },
+        "rating": 4.9,
+        "category": {
+          "id": "gunung",
+          "en": "mountain"
+        },
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/fc/aa/2d/pano-20171016-174332.jpg?w=1400&h=-1&s=1",
+        "hotels": [
+          {
+            "name": "FOX Hotel Jayapura",
+            "rating": 4.8,
+            "price": {
+              "id": "IDR 3.000.000/malam",
+              "en": "IDR 3,000,000/night"
+            },
+            "image": "https://example.com/images/hotel_carstensz.jpg"
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Rumah Laut Cafe & Restoran",
+            "rating": 4.6,
+            "price": {
+              "id": "IDR 120.000/orang",
+              "en": "IDR 120,000/person"
+            },
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/09/47/cb/resto-rumah-laut-jayapura.jpg?w=2000&h=-1&s=1"
+          }
+        ]
+      },
+      {
+        "name": {
+          "id": "Taman Nasional Lorentz",
+          "en": "National Park Lorentz"
+        },
+        "description": {
+          "id": "Taman Nasional Lorentz adalah taman nasional terbesar di Asia Tenggara yang terletak di Papua, Indonesia, dan diakui sebagai Situs Warisan Dunia oleh UNESCO. Taman ini memiliki keanekaragaman ekosistem yang luar biasa, mulai dari pantai, hutan mangrove, hutan hujan tropis, hingga gletser tropis di Puncak Jaya. Lorentz juga menjadi rumah bagi berbagai spesies langka dan endemik, termasuk burung cenderawasih dan flora unik Papua. Destinasi ini sempurna bagi pecinta alam, peneliti, dan petualang yang ingin mengeksplorasi keindahan alam dan budaya lokal secara langsung.",
+          "en": "Lorentz National Park is the largest national park in Southeast Asia, located in Papua, Indonesia, and recognized as a UNESCO World Heritage Site. The park features an extraordinary diversity of ecosystems, ranging from beaches, mangrove forests, tropical rainforests, to tropical glaciers on Mount Carstensz. Lorentz is also home to various rare and endemic species, including birds of paradise and unique Papuan flora. This destination is perfect for nature lovers, researchers, and adventurers seeking to explore natural beauty and local culture firsthand."
+        },
+        "rating": 4.8,
+        "category": {
+          "id": "alam",
+          "en": "nature"
+        },
+        "image": "https://i.pinimg.com/736x/3e/ad/22/3ead2227f60b2f8a4a6f107bf00c408c.jpg",
+        "hotels": [
+          {
+            "name": "Lorentz Eco Lodge",
+            "rating": 4.7,
+            "price": {
+              "id": "IDR 2.200.000/malam",
+              "en": "IDR 2,200,000/night"
+            },
+            "image": "https://i.pinimg.com/1200x/ab/56/68/ab56689a873e0136ff76a84d69f27b08.jpg"
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Yougwa",
+            "rating": 4.5,
+            "price": {
+              "id": "IDR 100.000/orang",
+              "en": "IDR 100,000/person"
+            },
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/c0/d8/20/img-20180105-141357-largejpg.jpg?w=1000&h=-1&s=1"
+          }
+        ]
+      },
+      {
+        "name": {
+          "id": "Pantai Harlem",
+          "en": "Beach Harlem"
+        },
+        "description": {
+          "id": "Pantai Harlem adalah pantai kecil yang menawan di Papua, dikenal dengan airnya yang jernih, pasir putih yang lembut, dan pemandangan alam yang memukau. Pantai ini dikelilingi oleh perbukitan hijau dan tebing-tebing batu karang yang menambah keindahan panorama. Pengunjung dapat berenang, bersantai di tepi pantai, atau menikmati aktivitas snorkeling untuk melihat kehidupan laut yang kaya. Suasana yang tenang membuat Pantai Harlem menjadi tempat ideal untuk beristirahat dari keramaian dan menikmati ketenangan alam Papua.",
+          "en": "Harlem Beach is a charming small beach in Papua, known for its clear waters, soft white sand, and stunning natural scenery. The beach is surrounded by green hills and rocky cliffs that enhance the panoramic views. Visitors can swim, relax by the shore, or enjoy snorkeling to explore the rich marine life. The peaceful atmosphere makes Harlem Beach an ideal spot to escape the crowds and enjoy the tranquility of Papua's nature."
+        },
+        "rating": 4.7,
+        "category": {
+          "id": "pantai",
+          "en": "beach"
+        },
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/15/6c/12/harlem-beach.jpg?w=1400&h=-1&s=1",
+        "hotels": [
+          {
+            "name": "Front One Hotel Jayapura",
+            "rating": 4.6,
+            "price": {
+              "id": "IDR 1.300.000/malam",
+              "en": "IDR 1,300,000/night"
+            },
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/ee/c9/7f/img-20180507-083948-largejpg.jpg?w=1100&h=600&s=1"
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Beachside Grill",
+            "rating": 4.4,
+            "price": {
+              "id": "IDR 110.000/orang",
+              "en": "IDR 110,000/person"
+            },
+            "image": "https://i.pinimg.com/736x/e1/40/cf/e140cf63068db6681344847a28206c58.jpg"
+          }
+        ]
+      },
+      {
+        "name": {
+          "id": "Wasur National Park",
+          "en": "Wasur National Park"
+        },
+        "description": {
+          "id": "Taman Nasional Wasur terletak di bagian selatan Papua dan dikenal sebagai 'Serengeti Papua' karena savana luasnya yang menjadi habitat bagi berbagai flora dan fauna endemik. Taman ini menjadi rumah bagi burung migran, satwa langka, dan berbagai spesies asli Papua. Pengunjung dapat melakukan pengamatan burung, trekking di alam terbuka, dan menjelajahi rawa-rawa serta sungai-sungai yang indah. Wasur National Park menawarkan pengalaman unik bagi pecinta alam, fotografer satwa liar, dan peneliti yang ingin mengeksplorasi ekosistem tropis yang kaya.",
+          "en": "Wasur National Park, located in southern Papua, is known as the 'Papua Serengeti' due to its vast savannas that serve as habitat for a variety of endemic flora and fauna. The park is home to migratory birds, rare animals, and numerous native Papuan species. Visitors can enjoy birdwatching, trekking in the open wilderness, and exploring its beautiful wetlands and rivers. Wasur National Park offers a unique experience for nature lovers, wildlife photographers, and researchers interested in exploring its rich tropical ecosystems."
+        },
+        "rating": 4.6,
+        "category": {
+          "id": "alam",
+          "en": "nature"
+        },
+        "image": "https://i.pinimg.com/736x/64/db/f4/64dbf488545f0ddfc5fdf4f6434bd5f0.jpg",
+        "hotels": [],
+        "restaurants": []
+      }
+    ]
+  },
+  {
+    "city": "Bali",
+    "description": {
+      "id": "Bali adalah pulau kecil di Indonesia yang menawarkan berbagai pengalaman wisata dalam satu tempat. Dari air terjun menakjubkan seperti Sekumpul di utara hingga pantai berpasir putih Nyang Nyang di selatan, Bali memiliki sesuatu untuk semua orang. Pecinta selancar dapat menaklukkan ombak di Batu Bolong, sementara pengunjung yang mencari hiburan malam dapat menikmati kelab di Seminyak. Hotel-hotel mewah di tebing Nusa Dua menawarkan pemandangan laut yang spektakuler, dan berbagai pura seperti Pura Gunung Kawi dan Pura Uluwatu menghadirkan pengalaman spiritual dan budaya. Jangan lewatkan pasar lokal seperti Pasar Seni Sukawati untuk karya seni dan kain tradisional, serta Pasar Malam Sindu untuk kuliner kaki lima seperti satai dan bakso. Bali memadukan keindahan alam, budaya, kuliner, dan hiburan menjadi destinasi yang tak terlupakan.",
+      "en": "Bali is a small Indonesian island offering a wide variety of experiences in one destination. From stunning waterfalls like Sekumpul in the north to white sandy beaches like Nyang Nyang in the south, Bali has something for everyone. Surfing enthusiasts can ride the waves at Batu Bolong, while visitors seeking nightlife can enjoy clubs in Seminyak. Luxury hotels on the cliffs of Nusa Dua offer spectacular ocean views, and temples such as Pura Gunung Kawi and Pura Uluwatu provide spiritual and cultural experiences. Don’t miss local markets like Pasar Seni Sukawati for traditional art and fabrics, or Pasar Malam Sindu for street food like satay and bakso. Bali combines natural beauty, culture, cuisine, and entertainment into an unforgettable destination."
+    },
+    "explore": {
+      "id": "Jelajahi Bali",
+      "en": "Explore Bali"
+    },
+    "places": [
+      {
+        "name": {
+          "id": "Pantai Kuta",
+          "en": "Beach Kuta"
+        },
+        "description": {
+          "id": "Pantai Kuta adalah pantai paling terkenal di Bali, dikenal dengan pasir putihnya yang lembut dan ombak yang ideal untuk berselancar, baik bagi pemula maupun peselancar berpengalaman. Terletak dekat pusat kota Kuta, pantai ini dikelilingi berbagai restoran, kafe, dan toko-toko suvenir, menjadikannya tempat favorit wisatawan untuk bersantai dan menikmati matahari terbenam. Selain berselancar, pengunjung dapat berjalan-jalan di sepanjang pantai, menikmati olahraga air, atau sekadar bersantai sambil menikmati pemandangan laut yang menakjubkan.",
+          "en": "Kuta Beach is Bali's most famous beach, renowned for its soft white sand and waves ideal for surfing, suitable for both beginners and experienced surfers. Located near the heart of Kuta town, the beach is surrounded by restaurants, cafes, and souvenir shops, making it a favorite spot for tourists to relax and watch the sunset. In addition to surfing, visitors can stroll along the shore, enjoy water sports, or simply unwind while taking in the stunning ocean views."
+        },
+        "rating": 4.8,
+        "category": {
+          "id": "pantai",
+          "en": "beach"
+        },
+        "image": "https://i.pinimg.com/736x/90/1e/f5/901ef55dac4d3275e74a7a500fd50a6b.jpg",
+        "hotels": [
+          {
+            "name": "Anathera Resort Kuta",
+            "rating": 4.7,
+            "price": {
+              "id": "IDR 2.000.000/malam",
+              "en": "IDR 2,000,000/night"
+            },
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/07/98/75/swiss-belhotel-tuban.jpg?w=1000&h=-1&s=1"
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Gioi Ocean Gourmet",
+            "rating": 4.6,
+            "price": {
+              "id": "IDR 150.000/orang",
+              "en": "IDR 150,000/person"
+            },
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/5e/70/27/caption.jpg?w=1100&h=600&s=1"
+          }
+        ]
+      },
+      {
+        "name": {
+          "id": "Ubud Monkey Forest",
+          "en": "Ubud Monkey Forest"
+        },
+        "description": {
+          "id": "Ubud Monkey Forest adalah hutan suci yang terletak di pusat Ubud, Bali, dikenal sebagai habitat ratusan monyet ekor panjang yang hidup bebas. Selain kehidupan satwa liar, hutan ini memiliki beberapa pura kuno yang indah dan dihormati oleh masyarakat setempat, termasuk Pura Dalem Agung Padangtegal. Pengunjung dapat berjalan di jalur hutan yang teduh, berinteraksi dengan monyet secara aman, dan menikmati suasana tenang yang memadukan alam dan spiritualitas. Tempat ini menjadi destinasi populer bagi wisatawan yang ingin merasakan pengalaman budaya dan alam Bali secara langsung.",
+          "en": "Ubud Monkey Forest is a sacred forest located in the heart of Ubud, Bali, known as the habitat of hundreds of free-roaming long-tailed monkeys. In addition to the wildlife, the forest contains several ancient and revered temples, including Pura Dalem Agung Padangtegal. Visitors can stroll along shaded forest paths, safely interact with the monkeys, and enjoy a serene atmosphere that combines nature and spirituality. This site is a popular destination for tourists seeking an immersive experience of Balinese culture and natural beauty."
+        },
+        "rating": 4.7,
+        "category": {
+          "id": "alam",
+          "en": "nature"
+        },
+        "image": "https://monkeyforestubud.com/wp-content/themes/monkey-forest/images/gallery/Gallery-The-Pool.jpg?x17733",
+        "hotels": [
+          {
+            "name": "Adiwana Unagi Suites",
+            "rating": 5.0,
+            "price": {
+              "id": "IDR 2.800.000/malam",
+              "en": "IDR 1,800,000/night"
+            },
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/68/f9/72/adiwana-unagi-suites.jpg?w=1400&h=800&s=1"
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Copper Kitchen & Bar",
+            "rating": 4.5,
+            "price": {
+              "id": "IDR 120.000/orang",
+              "en": "IDR 120,000/person"
+            },
+            "image": "hhttps://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/80/17/51/the-rooftop.jpg?w=1600&h=900&s=1"
+          }
+        ]
+      },
+      {
+        "name": {
+          "id": "Tanah Lot",
+          "en": "Tanah Lot"
+        },
+        "description": {
+          "id": "Tanah Lot adalah salah satu pura paling ikonik di Bali, terletak di atas batu karang di tepi laut. Tempat ini terkenal dengan pemandangan matahari terbenam yang memukau dan ombak laut yang menghantam batu karang, menciptakan panorama yang spektakuler. Pura ini juga memiliki nilai budaya dan spiritual yang tinggi bagi masyarakat Bali, dan sering digunakan untuk upacara keagamaan. Pengunjung dapat berjalan di area sekitar, menikmati foto-foto lanskap, serta menjelajahi pasar lokal yang menjual kerajinan tangan, kain tradisional, dan kuliner khas Bali.",
+          "en": "Tanah Lot is one of Bali's most iconic temples, perched on a rock formation by the sea. It is renowned for its breathtaking sunsets and the waves crashing against the rocks, creating a spectacular panorama. The temple also holds significant cultural and spiritual value for the Balinese community and is often used for religious ceremonies. Visitors can explore the surrounding area, take photos of the stunning landscape, and browse local markets selling handicrafts, traditional fabrics, and Balinese cuisine."
+        },
+        "rating": 4.9,
+        "category": {
+          "id": "sejarah",
+          "en": "history"
+        },
+        "image": "https://i.pinimg.com/1200x/65/4d/0f/654d0f4bf17037a27bb0f13010e23389.jpg",
+        "hotels": [
+          {
+            "name": "Coco Verde Bali Resort",
+            "rating": 4.7,
+            "price": {
+              "id": "IDR 2.200.000/malam",
+              "en": "IDR 2,200,000/night"
+            },
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/a0/9b/77/coco-verde-bali-resort.jpg?w=1400&h=-1&s=1"
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "De jukung Resto & Bar Tanah Lot",
+            "rating": 4.6,
+            "price": {
+              "id": "IDR 180.000/orang",
+              "en": "IDR 180,000/person"
+            },
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/e2/75/3a/main-angel.jpg?w=1100&h=600&s=1"
+          }
+        ]
+      },
+      {
+        "name": {
+          "id": "Pura Besakih",
+          "en": "Pura Besakih"
+        },
+        "description": {
+          "id": "Pura Besakih dikenal sebagai 'Pura Ibu' dan merupakan pura terbesar serta paling suci di Bali. Terletak di lereng Gunung Agung, kompleks pura ini terdiri dari lebih dari 80 pura yang saling terhubung, masing-masing memiliki fungsi dan upacara khusus. Pura Besakih tidak hanya menjadi pusat kegiatan keagamaan masyarakat Hindu Bali, tetapi juga menawarkan pemandangan alam pegunungan yang menakjubkan. Pengunjung dapat mempelajari budaya Bali, menyaksikan upacara keagamaan, dan menikmati panorama alam yang mempesona dari berbagai titik di kompleks pura.",
+          "en": "Pura Besakih, known as the 'Mother Temple,' is the largest and holiest temple in Bali. Located on the slopes of Mount Agung, this temple complex consists of more than 80 interconnected temples, each with its own function and ceremonial purpose. Pura Besakih serves as the center of Hindu religious activities in Bali, while also offering breathtaking mountain views. Visitors can learn about Balinese culture, witness religious ceremonies, and enjoy the stunning natural scenery from various points within the temple complex."
+        },
+        "rating": 4.8,
+        "category": {
+          "id": "sejarah",
+          "en": "history"
+        },
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/6c/1a/c1/mother-temple-besakih.jpg?w=800&h=-1&s=1",
+        "hotels": [
+          {
+            "name": "Magic Hill Bali",
+            "rating": 4.6,
+            "price": {
+              "id": "IDR 1.700.000/malam",
+              "en": "IDR 1,700,000/night"
+            },
+            "image": "https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/681706460.jpg?k=a7084b4f65941f24f1722c4ee43814a778b527db07eeed74c67bbf002d33254d&o=&s=1024x"
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "The Edelweiss Restaurant And Bar",
+            "rating": 4.5,
+            "price": {
+              "id": "IDR 130.000/orang",
+              "en": "IDR 130,000/person"
+            },
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/34/c8/97/best-mountain-view-while.jpg?w=1400&h=-1&s=1"
+          }
+        ]
+      },
+      {
+        "name": {
+          "id": "Pantai Sanur",
+          "en": "Beach Sanur"
+        },
+        "description": {
+          "id": "Pantai Sanur menawarkan suasana yang tenang dan damai, sempurna untuk liburan santai jauh dari keramaian. Dengan pasir putih yang lembut dan ombak yang bersahabat, pengunjung bisa menikmati aktivitas seperti berjalan-jalan di tepi pantai, bermain voli pantai, atau sekadar duduk menikmati matahari terbit yang memukau. Di sepanjang pantai terdapat berbagai kafe dan restoran yang menyajikan hidangan lokal dan internasional, serta hotel-hotel nyaman yang cocok untuk keluarga maupun pasangan. Pantai ini juga terkenal dengan jalur bersepeda yang membentang di sepanjang pesisir, memberikan pengalaman menikmati panorama laut sambil berolahraga.",
+          "en": "Sanur Beach provides a serene and peaceful atmosphere, ideal for a relaxing getaway away from the crowds. With soft white sand and gentle waves, visitors can enjoy activities such as strolling along the shore, playing beach volleyball, or simply sitting to watch the stunning sunrise. The beach is lined with cafes and restaurants offering both local and international cuisines, as well as cozy hotels suitable for families and couples. It’s also well-known for its scenic cycling paths along the coast, giving visitors a unique way to enjoy the ocean view while staying active."
+        },
+        "rating": 4.6,
+        "category": {
+          "id": "pantai",
+          "en": "beach"
+        },
+        "image": "https://www.baliholidaysecrets.com/wp-content/uploads/2025/05/sanur-beach-on-a-bright-day.webp",
+        "hotels": [
+          {
+            "name": "Sanur Beach Hotel",
+            "rating": 4.5,
+            "price": {
+              "id": "IDR 1.600.000/malam",
+              "en": "IDR 1,600,000/night"
+            },
+            "image": "https://www.baliholidaysecrets.com/wp-content/uploads/2019/12/la-plancha-6-bali-holiday-secrets.jpeg"
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "La Plancha Bar & Restaurant",
+            "rating": 4.4,
+            "price": {
+              "id": "IDR 100.000/orang",
+              "en": "IDR 100,000/person"
+            },
+            "image": "https://www.baliholidaysecrets.com/wp-content/uploads/2019/12/la-plancha-6-bali-holiday-secrets.jpeg"
+          }
+        ]
+      },
+      {
+        "name": {
+          "id": "Nusa Penida",
+          "en": "Nusa Penida"
+        },
+        "description": {
+          "id": "Nusa Penida adalah pulau eksotis yang memikat dengan pemandangan tebing curam, pantai tersembunyi, dan air laut jernih yang sempurna untuk diving dan snorkeling. Pulau ini juga menjadi rumah bagi berbagai flora dan fauna endemik, menjadikannya destinasi ideal bagi pecinta alam dan fotografer. Pengunjung bisa menjelajahi tempat-tempat ikonik seperti Kelingking Beach, Angel’s Billabong, dan Broken Beach, setiap sudutnya menawarkan panorama yang menakjubkan. Tersedia juga penginapan nyaman serta restoran yang menyajikan seafood segar dan masakan lokal khas Bali. Transportasi lokal, seperti sewa motor atau mobil, memudahkan eksplorasi pulau ini secara bebas.",
+          "en": "Nusa Penida is an exotic island featuring breathtaking cliffs, hidden beaches, and crystal-clear waters perfect for diving and snorkeling. The island is also home to various endemic flora and fauna, making it an ideal destination for nature lovers and photographers. Visitors can explore iconic spots such as Kelingking Beach, Angel’s Billabong, and Broken Beach, each offering stunning panoramic views. Comfortable accommodations and restaurants serve fresh seafood and traditional Balinese cuisine. Local transportation, including motorbike or car rentals, makes it easy to explore the island at your own pace."
+        },
+        "rating": 4.9,
+        "category": {
+          "id": "alam",
+          "en": "nature"
+        },
+        "image": "https://theworldtravelguy.com/wp-content/uploads/2018/11/DJI_0762.jpg",
+        "hotels": [
+          {
+            "name": "Akusara Jungle Resort And Spa",
+            "rating": 4.7,
+            "price": {
+              "id": "IDR 2.400.000/malam",
+              "en": "IDR 2,400,000/night"
+            },
+            "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/613749055.jpg?k=719dceac6d66185ffc2a6d5728cf02cddcfc6dd5bd671c9cccdcab83e66cea80&o="
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Sandy Bay Beach Club",
+            "rating": 4.6,
+            "price": {
+              "id": "IDR 180.000/orang",
+              "en": "IDR 180,000/person"
+            },
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/22/c3/90/poke-bowl-and-vegy-burger.jpg?w=800&h=800&s=1"
+          }
+        ]
+      },
+      {
+        "name": {
+          "id": "Garuda Wisnu Kencana",
+          "en": "Garuda Wisnu Kencana"
+        },
+        "description": {
+          "id": "Garuda Wisnu Kencana (GWK) adalah taman budaya yang menakjubkan, menampilkan patung raksasa dewa Wisnu yang menaiki Garuda, simbol spiritual dan kebanggaan budaya Bali. Selain patung ikonik, GWK memiliki area terbuka untuk pertunjukan seni, konser, dan festival budaya, sehingga pengunjung bisa merasakan pengalaman budaya Bali yang autentik. Taman ini dikelilingi taman hijau dan jalur pejalan kaki yang rapi, cocok untuk fotografi atau sekadar bersantai. Penginapan dan restoran di sekitar kawasan menyediakan kenyamanan dan pilihan kuliner bagi wisatawan yang ingin menikmati suasana malam dengan pemandangan patung yang diterangi lampu.",
+          "en": "Garuda Wisnu Kencana (GWK) is an impressive cultural park featuring a giant statue of the deity Vishnu riding Garuda, a spiritual symbol and a pride of Balinese culture. In addition to the iconic statue, GWK offers open spaces for art performances, concerts, and cultural festivals, allowing visitors to experience authentic Balinese culture. The park is surrounded by lush gardens and well-maintained walking paths, perfect for photography or leisurely strolls. Nearby accommodations and restaurants provide comfort and dining options for visitors wishing to enjoy the nighttime view of the illuminated statue."
+        },
+        "rating": 4.7,
+        "category": {
+          "id": "modern",
+          "en": "modern"
+        },
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/45/17/c6/el-kabron-bali-is-an.jpg?w=800&h=800&s=1",
+        "hotels": [
+          {
+            "name": "The Leaf Jimbaran",
+            "rating": 4.6,
+            "price": {
+              "id": "IDR 1.900.000/malam",
+              "en": "IDR 1,900,000/night"
+            },
+            "image": "https://media-cdn.tripadvisor.com/media/photo-s/09/50/33/18/the-leaf-jimbaran.jpg"
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "El Kabron Bali",
+            "rating": 4.5,
+            "price": {
+              "id": "IDR 140.000/orang",
+              "en": "IDR 140,000/person"
+            },
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/45/17/c6/el-kabron-bali-is-an.jpg?w=800&h=800&s=1"
+          }
+        ]
+      },
+      {
+        "name": {
+          "id": "Pantai Pandawa",
+          "en": "Beach Pandawa"
+        },
+        "description": {
+          "id": "Pantai Pandawa dikenal sebagai pantai tersembunyi dengan pasir putih yang halus dan tebing batu kapur yang dramatis, menciptakan lanskap yang menakjubkan untuk dijelajahi. Aktivitas populer termasuk berenang di perairan jernih, bermain kayak, atau sekadar berjemur di bawah sinar matahari. Di tepi pantai terdapat berbagai warung dan restoran yang menyajikan hidangan seafood segar serta minuman tropis yang menyegarkan. Pantai ini relatif lebih sepi dibandingkan pantai populer lain di Bali, menjadikannya tempat ideal untuk relaksasi dan fotografi. Selain itu, jalan menuju Pantai Pandawa dipenuhi patung-patung khas yang menambah nuansa artistik dan tradisional Bali.",
+          "en": "Pandawa Beach is known as a hidden gem with soft white sand and dramatic limestone cliffs, creating a stunning landscape to explore. Popular activities include swimming in the clear waters, kayaking, or simply sunbathing. Along the beach are various small eateries and restaurants serving fresh seafood and refreshing tropical drinks. The beach is relatively less crowded compared to other popular beaches in Bali, making it ideal for relaxation and photography. The road to Pandawa Beach is adorned with unique statues, adding an artistic and traditional Balinese touch to the journey."
+        },
+        "rating": 4.8,
+        "category": {
+          "id": "pantai",
+          "en": "beach"
+        },
+        "image": "https://i.pinimg.com/1200x/3a/5f/95/3a5f9512df4a6963b8b408cc639b3bdb.jpg",
+        "hotels": [
+          {
+            "name": "Pandawa Beach Resort",
+            "rating": 4.7,
+            "price": {
+              "id": "IDR 2.100.000/malam",
+              "en": "IDR 2,100,000/night"
+            },
+            "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/301649176.jpg?k=b3da24936b3604028d1f5ee4c2e54624b2d9f612d2fc51df84c55275de356f23&o="
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Cliffside Diner",
+            "rating": 4.6,
+            "price": {
+              "id": "IDR 150.000/orang",
+              "en": "IDR 150,000/person"
+            },
+            "image": "https://baliuntold.com/wp-content/uploads/2024/02/Pandawa-Beach-Bali-cafes.jpg"
+          }
+        ]
+      },
+      {
+        "name": {
+          "id": "Tegallalang Rice Terrace",
+          "en": "Tegallalang Rice Terrace"
+        },
+        "description": {
+          "id": "Tegallalang adalah sawah terasering ikonik yang terletak di kawasan Ubud, Bali. Dengan pola teras yang rapi dan hijau subur, tempat ini menjadi magnet bagi para wisatawan dan fotografer yang ingin menangkap keindahan alam khas Bali. Selain pemandangan yang memesona, pengunjung juga bisa berjalan di sepanjang jalur setapak di antara teras sawah, menikmati udara segar, dan merasakan ketenangan pedesaan. Di sekitar kawasan terdapat berbagai kafe dan warung yang menawarkan minuman dan makanan lokal sambil menikmati panorama sawah. Tegallalang juga terkenal dengan wisata budaya seperti workshop pembuatan kerajinan tangan dan pelajaran bertani, memberikan pengalaman yang lebih autentik bagi pengunjung yang ingin belajar tentang kehidupan desa Bali.",
+          "en": "Tegallalang is the iconic terraced rice fields located in Ubud, Bali. With neatly arranged terraces and lush green paddies, this spot attracts tourists and photographers looking to capture the quintessential beauty of Balinese landscapes. Visitors can walk along the pathways between the rice terraces, enjoy the fresh air, and experience the serenity of rural life. The surrounding area is dotted with cafes and local eateries where visitors can enjoy food and drinks while taking in the scenic views. Tegallalang is also known for cultural experiences such as handicraft workshops and farming lessons, offering a more authentic insight into Balinese village life."
+        },
+        "rating": 4.8,
+        "category": {
+          "id": "alam",
+          "en": "nature"
+        },
+        "image": "https://theworldtravelguy.com/wp-content/uploads/2020/05/DJI_0910_900.jpg",
+        "hotels": [
+          {
+            "name": "Rice Terrace Villa",
+            "rating": 4.8,
+            "price": {
+              "id": "IDR 2.000.000/malam",
+              "en": "IDR 2,000,000/night"
+            },
+            "image": "hhttps://cf.bstatic.com/xdata/images/hotel/max1024x768/372928043.jpg?k=f2bc8c5dc718e57815f6da089e2a46dbe81c66189b142a04ad586b40de69a125&o="
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Terrace Cafe",
+            "rating": 4.7,
+            "price": {
+              "id": "IDR 130.000/orang",
+              "en": "IDR 130,000/person"
+            },
+            "image": "https://lh3.googleusercontent.com/geougc-cs/AB3l90CLWB8_B9i-aG4FoJhWLOh6PTOIGYKFnw0KiYh9Z74SvipF0UFyYCAhBmcEGSym8Em8BbfomloqVxkuff9x8oV3g4_EPFQHJMYvvyzF8_9d4w9uevPgNVUqC0kxongCUX6gv2XcoFKS6EoK"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "city": "Yogyakarta",
+    "description": {
+      "id": "Yogyakarta, sering disebut 'Kota Pelajar', adalah pusat kebudayaan Jawa yang kaya akan sejarah, seni, dan kuliner. Kota ini memadukan nuansa tradisional dan modern, dari istana Sultan yang bersejarah hingga jalan-jalan yang ramai dengan pusat perbelanjaan dan kafe kreatif. Pengunjung dapat menikmati pengalaman budaya autentik seperti batik, gamelan, wayang, serta upacara tradisional. Kuliner khas Yogyakarta, termasuk gudeg, bakpia, dan wedang uwuh, menjadi daya tarik tersendiri. Selain itu, kota ini dekat dengan berbagai destinasi alam dan petualangan seperti Gunung Merapi dan Goa Pindul.",
+      "en": "Yogyakarta, often called the 'City of Students', is the cultural heart of Java, rich in history, arts, and culinary experiences. The city blends traditional and modern vibes, from the historic Sultan's palace to busy streets filled with shopping centers and creative cafes. Visitors can enjoy authentic cultural experiences such as batik, gamelan, wayang performances, and traditional ceremonies. Signature dishes like gudeg, bakpia, and wedang uwuh offer unique local flavors. The city also provides easy access to natural and adventure destinations like Mount Merapi and Goa Pindul."
+    },
+    "explore": {
+      "id": "Jelajahi Yogyakarta",
+      "en": "Explore Yogyakarta"
+    },
+    "places": [
+      {
+        "name": {
+          "id": "Candi Borobudur",
+          "en": "Borobudur Temple"
+        },
+        "description": {
+          "id": "Candi Borobudur adalah candi Buddha terbesar di dunia dan situs warisan dunia UNESCO. Dibangun pada abad ke-9, candi ini memiliki 504 arca Buddha dan 2.672 panel relief yang menggambarkan ajaran Buddha dan kehidupan masyarakat Jawa kuno. Pengunjung dapat menikmati panorama matahari terbit dari puncak candi, menjelajahi lorong-lorong relief yang menakjubkan, dan mempelajari sejarah serta filosofi di balik setiap pahatan.",
+          "en": "Borobudur Temple is the largest Buddhist temple in the world and a UNESCO World Heritage Site. Built in the 9th century, it features 504 Buddha statues and 2,672 relief panels depicting Buddhist teachings and ancient Javanese life. Visitors can enjoy sunrise views from the top, explore the intricate relief corridors, and learn about the history and philosophy behind each carving."
+        },
+        "rating": 4.9,
+        "category": {
+          "id": "sejarah",
+          "en": "history"
+        },
+        "image": "https://whc.unesco.org/uploads/thumbs/site_0592_0027-1000-538-20131015114629.jpg",
+        "hotels": [
+          {
+            "name": "Plataran Heritage Borobudur Hotel",
+            "rating": 4.8,
+            "price": {
+              "id": "IDR 2.500.000/malam",
+              "en": "IDR 2,500,000/night"
+            },
+            "image": "https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/100461848.jpg?k=0ff846e2d0816bca0d36e512f4e6839c918b175b0053e1fc235dd4ef49613dc0&o=&s=1024x"
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Stupa Restaurant by Plataran",
+            "rating": 4.6,
+            "price": {
+              "id": "IDR 150.000/orang",
+              "en": "IDR 150,000/person"
+            },
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/ef/46/c1/stupa-restaurant-by-plataran.jpg?w=1800&h=-1&s=1"
+          }
+        ]
+      },
+      {
+        "name": {
+          "id": "Keraton Yogyakarta",
+          "en": "Keraton Yogyakarta"
+        },
+        "description": {
+          "id": "Keraton Yogyakarta adalah istana resmi Kesultanan Yogyakarta yang sarat sejarah dan budaya. Didirikan pada abad ke-18, keraton ini menyimpan berbagai artefak kerajaan, koleksi batik, dan gamelan klasik. Pengunjung dapat mengikuti tur berpemandu untuk mempelajari sejarah, menyaksikan pertunjukan budaya, serta merasakan kehidupan tradisional Jawa.",
+          "en": "The Yogyakarta Sultanate Palace, or Keraton, is the official palace rich in history and culture. Established in the 18th century, it houses royal artifacts, batik collections, and classical gamelan instruments. Visitors can join guided tours to learn history, watch cultural performances, and experience traditional Javanese life."
+        },
+        "rating": 4.7,
+        "category": {
+          "id": "sejarah",
+          "en": "history"
+        },
+        "image": "https://www.timetravelturtle.com/wp-content/uploads/2012/11/Indonesia-2012-447_new.jpg",
+        "hotels": [
+          {
+            "name": "Hotel Tasneem Malioboro Yogyakarta",
+            "rating": 4.5,
+            "price": {
+              "id": "IDR 1.800.000/malam",
+              "en": "IDR 1,800,000/night"
+            },
+            "image": "https://pix8.agoda.net/hotelImages/929139/0/4da8fa6f4bc7ecae1429908748961ad7.jpg?ce=2&s=1024x"
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Bale Raos",
+            "rating": 4.6,
+            "price": {
+              "id": "IDR 120.000/orang",
+              "en": "IDR 120,000/person"
+            },
+            "image": "https://baleraos.co.id/wp-content/uploads/2024/04/Bale-Raos-Kraton.jpg"
+          }
+        ]
+      },
+      {
+        "name": {
+          "id": "Malioboro",
+          "en": "Malioboro"
+        },
+        "description": {
+          "id": "Jalan Malioboro adalah jalan paling ikonik di Yogyakarta yang terkenal sebagai pusat belanja dan kuliner malam. Di sepanjang jalan ini, wisatawan dapat menemukan berbagai toko oleh-oleh khas Yogyakarta, pedagang kaki lima yang menawarkan makanan tradisional seperti gudeg, bakpia, dan sate klathak, serta suasana malam yang ramai dengan lampu-lampu dan musik jalanan. Jalan ini juga menjadi tempat yang populer untuk fotografi, berjalan-jalan santai, dan menikmati budaya lokal yang kental.",
+          "en": "Malioboro Street is the most iconic street in Yogyakarta, known as the hub for shopping and night culinary experiences. Along this street, visitors can find a variety of souvenir shops, street vendors offering traditional foods such as gudeg, bakpia, and satay, and a lively night atmosphere filled with lights and street music. It is also a popular spot for photography, casual walks, and experiencing the rich local culture."
+        },
+        "rating": 4.8,
+        "category": {
+          "id": "modern",
+          "en": "modern"
+        },
+        "image": "https://i.pinimg.com/1200x/fb/f9/28/fbf928446daf5ec0e67025494a7637e7.jpg",
+        "hotels": [
+          {
+            "name": "Hotel Tasneem Malioboro Yogyakarta",
+            "rating": 4.5,
+            "price": {
+              "id": "IDR 1.800.000/malam",
+              "en": "IDR 1,800,000/night"
+            },
+            "image": "https://pix8.agoda.net/hotelImages/929139/0/4da8fa6f4bc7ecae1429908748961ad7.jpg?ce=2&s=1024x"
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Malioboro Street Food",
+            "rating": 4.5,
+            "price": {
+              "id": "IDR 100.000/orang",
+              "en": "IDR 100,000/person"
+            },
+            "image": "https://i.pinimg.com/736x/7a/bc/93/7abc93e72ef37a19d53a54ed6e9e8f89.jpg"
+          }
+        ]
+      },
+      {
+        "name": {
+          "id": "Gunung Merapi",
+          "en": "Mount Merapi"
+        },
+        "description": {
+          "id": "Gunung Merapi adalah gunung berapi aktif yang terkenal di Yogyakarta dan sekitarnya. Gunung ini menawarkan panorama alam yang menakjubkan, termasuk pemandangan lautan awan, hutan pinus, dan desa-desa di kaki gunung. Jalur pendakiannya menantang dan cocok untuk para pendaki pemula hingga berpengalaman. Selain mendaki, wisatawan dapat menikmati sunrise atau sunset dari puncak, mengikuti tur jeep lava Merapi, dan mempelajari sejarah letusan yang membentuk lanskap sekitarnya.",
+          "en": "Mount Merapi is an active volcano renowned in Yogyakarta and its surrounding areas. The mountain offers breathtaking natural scenery, including sea of clouds, pine forests, and villages at its base. Its hiking trails are challenging and suitable for both novice and experienced climbers. In addition to trekking, visitors can enjoy sunrise or sunset from the peak, take a Merapi lava jeep tour, and learn about the eruptions that shaped the surrounding landscape."
+        },
+        "rating": 4.9,
+        "category": {
+          "id": "gunung",
+          "en": "mountain"
+        },
+        "image": "https://i.pinimg.com/736x/4c/4f/bb/4c4fbb8d097a058fe54e7ebf766f36aa.jpg",
+        "hotels": [],
+        "restaurants": []
+      },
+      {
+        "name": {
+          "id": "Pantai Parangtritis",
+          "en": "Beach Parangtritis"
+        },
+        "description": {
+          "id": "Pantai Parangtritis adalah pantai terkenal di Yogyakarta yang menawarkan pemandangan alam menakjubkan dengan garis pantai yang luas dan ombak besar. Pantai ini sangat populer untuk menikmati matahari terbenam yang spektakuler, berjalan-jalan di pasir hitam, dan mencoba berbagai aktivitas wisata seperti naik delman atau paralayang. Selain keindahan alamnya, pantai ini juga memiliki nilai budaya karena dipercaya sebagai tempat berkumpulnya roh Nyi Roro Kidul menurut legenda lokal.",
+          "en": "Parangtritis Beach is a famous beach in Yogyakarta offering stunning natural scenery with a wide coastline and strong waves. It is highly popular for watching spectacular sunsets, strolling along the black sand, and enjoying activities such as horse-drawn carriage rides or paragliding. Beyond its natural beauty, the beach holds cultural significance as it is believed to be the gathering place of the spirit Nyi Roro Kidul according to local legend."
+        },
+        "rating": 4.6,
+        "category": {
+          "id": "pantai",
+          "en": "beach"
+        },
+        "image": "https://i.pinimg.com/736x/63/bd/42/63bd427abf581c55bdf34d62a84709cd.jpg",
+        "hotels": [],
+        "restaurants": []
+      },
+      {
+        "name": {
+          "id": "Hutan Pinus Mangunan",
+          "en": "Forest Pinus Mangunan"
+        },
+        "description": {
+          "id": "Hutan Pinus Mangunan adalah kawasan hutan pinus yang luas dan sejuk di Dlingo, Yogyakarta, menawarkan pemandangan alam yang menenangkan dan udara segar yang menyegarkan. Tempat ini sangat cocok untuk piknik bersama keluarga atau teman, bersepeda, dan berjalan-jalan di antara pepohonan tinggi yang menjulang. Selain itu, lokasi ini populer bagi para fotografer dan wisatawan yang ingin mengambil foto dengan latar pepohonan yang rapi dan cahaya matahari yang menembus dedaunan, menciptakan suasana yang magis dan Instagramable.",
+          "en": "Mangunan Pine Forest is a vast and cool pine forest in Dlingo, Yogyakarta, offering a calming natural scenery and refreshing air. It is perfect for picnics with family or friends, cycling, and strolling among the tall, majestic pine trees. The site is also popular among photographers and tourists who want to capture photos with neatly aligned trees and sunlight filtering through the foliage, creating a magical and Instagram-worthy atmosphere."
+        },
+        "rating": 4.7,
+        "category": {
+          "id": "alam",
+          "en": "nature"
+        },
+        "image": "https://i.pinimg.com/736x/cc/26/71/cc2671dc84fef933d8e6067c078b76b0.jpg",
+        "hotels": [],
+        "restaurants": []
+      },
+      {
+        "name": {
+          "id": "candi Prambanan",
+          "en": "candi Prambanan"
+        },
+        "description": {
+          "id": "Candi Prambanan adalah kompleks candi Hindu terbesar di Indonesia yang terletak di dekat Yogyakarta. Destinasi ini memukau pengunjung dengan arsitektur candi yang megah, relief yang menceritakan kisah Ramayana, dan pemandangan sekitarnya yang indah. Terdapat beberapa gardu pandang dan area strategis untuk mengambil foto, sehingga pengunjung dapat menikmati keindahan candi dari berbagai sudut dan menangkap momen matahari terbit atau terbenam yang spektakuler.",
+          "en": "Prambanan Temple is the largest Hindu temple complex in Indonesia, located near Yogyakarta. This destination captivates visitors with its magnificent temple architecture, reliefs depicting the Ramayana story, and beautiful surrounding scenery. There are several viewing decks and strategic spots for photography, allowing visitors to enjoy the temple's beauty from different angles and capture spectacular sunrise or sunset moments."
+        },
+        "rating": 4.8,
+        "category": {
+          "id": "sejarah",
+          "en": "history"
+        },
+        "image": "https://i.pinimg.com/1200x/26/ef/a0/26efa02327abae9ee61943667ca735c3.jpg",
+        "hotels": [],
+        "restaurants": []
+      }
+    ]
+  },
+  {
+    "city": "Bandung",
+    "description": {
+      "id": "Bandung adalah ibu kota Provinsi Jawa Barat yang terkenal dengan udara sejuk dan suasana pegunungan yang menenangkan. Kota ini menawarkan berbagai destinasi wisata alam yang memukau seperti Kawah Putih, Tangkuban Perahu, dan Dusun Bambu, serta tempat rekreasi modern dan taman hiburan keluarga seperti Trans Studio Bandung. Bandung juga dikenal sebagai pusat kuliner yang menawarkan makanan tradisional Sunda, kafe modern, dan jajanan unik. Selain itu, kota ini menjadi surga belanja bagi wisatawan dengan factory outlet, pasar seni, dan pusat perbelanjaan yang beragam. Kombinasi keindahan alam, budaya, kuliner, dan belanja menjadikan Bandung destinasi wisata yang lengkap dan memikat bagi semua jenis wisatawan.",
+      "en": "Bandung, the capital city of West Java Province, is renowned for its cool climate and calming mountainous atmosphere. The city offers a variety of natural attractions such as Kawah Putih, Tangkuban Perahu, and Dusun Bambu, along with modern recreational spots and family amusement parks like Trans Studio Bandung. Bandung is also famous as a culinary hub, serving traditional Sundanese dishes, modern cafes, and unique street food. Additionally, the city is a shopping paradise with factory outlets, art markets, and diverse shopping centers. The combination of natural beauty, culture, cuisine, and shopping makes Bandung a complete and captivating tourist destination for all types of travelers."
+    },
+    "explore": {
+      "id": "Jelajahi Bandung",
+      "en": "Explore Bandung"
+    },
+    "places": [
+      {
+        "name": {
+          "id": "Kawah Putih",
+          "en": "Kawah Putih"
+        },
+        "description": {
+          "id": "Kawah Putih adalah sebuah danau kawah vulkanik yang terletak di daerah Ciwidey, Bandung, dengan air berwarna putih kehijauan yang mempesona. Fenomena warna air ini berubah-ubah tergantung kandungan belerang dan suhu, menciptakan pemandangan yang menakjubkan bagi para pengunjung. Kawah ini dikelilingi oleh tebing-tebing curam dan vegetasi pegunungan yang rimbun, membuat suasana di sekitar menjadi sejuk dan menenangkan. Tempat ini menjadi destinasi populer untuk wisatawan yang ingin menikmati keindahan alam, fotografi, atau sekadar bersantai di tengah udara segar pegunungan.",
+          "en": "Kawah Putih is a volcanic crater lake located in Ciwidey, Bandung, featuring mesmerizing white-green waters. The water’s color changes depending on sulfur content and temperature, creating a stunning and unique natural spectacle. Surrounded by steep cliffs and lush mountain vegetation, the area offers a cool and tranquil atmosphere. This site has become a popular destination for visitors seeking natural beauty, photography opportunities, or simply a relaxing escape in the fresh mountain air."
+        },
+        "rating": 4.8,
+        "category": {
+          "id": "alam",
+          "en": "nature"
+        },
+        "image": "https://i.pinimg.com/1200x/0a/fa/d4/0afad43c96aca65c3ab8da4f864fd47a.jpg",
+        "hotels": [
+          {
+            "name": "Ciwidey Valley Resort",
+            "rating": 4.7,
+            "price": {
+              "id": "IDR 2.000.000/malam",
+              "en": "IDR 2,000,000/night"
+            },
+            "image": "https://images.getaroom-cdn.com/image/upload/s--iFDGH7QK--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1720438519/ec7ad240ed0852353d79af6443dd0f7a9d03544d?_a=BACAEuDL&atc=e7cd1cfa"
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Warung kopi gunug",
+            "rating": 4.6,
+            "price": {
+              "id": "IDR 120.000/orang",
+              "en": "IDR 120,000/person"
+            },
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/ec/18/3b/photo1jpg.jpg?w=1400&h=-1&s=1"
+          }
+        ]
+      },
+      {
+        "name": {
+          "id": "Farmhouse Lembang",
+          "en": "Farmhouse Lembang"
+        },
+        "description": {
+          "id": "Farmhouse Lembang adalah destinasi wisata keluarga yang menawarkan suasana khas Eropa lengkap dengan bangunan bergaya cottage, taman yang rapi, dan peternakan mini tempat pengunjung dapat berinteraksi dengan hewan seperti kelinci, domba, dan kambing. Selain itu, pengunjung dapat menikmati berbagai spot foto Instagramable, kafe yang menyajikan kuliner lokal dan internasional, serta area bermain anak yang aman. Tempat ini cocok untuk liburan santai, edukasi bagi anak-anak tentang hewan ternak, serta menikmati udara sejuk khas pegunungan Lembang.",
+          "en": "Farmhouse Lembang is a family-friendly destination offering a European-style ambiance with cottage-style buildings, neatly landscaped gardens, and a mini farm where visitors can interact with animals such as rabbits, sheep, and goats. Visitors can also enjoy numerous Instagram-worthy photo spots, cafes serving both local and international cuisine, and safe play areas for children. This place is ideal for a relaxing holiday, educational experiences for kids about farm animals, and enjoying the cool mountain air of Lembang."
+        },
+        "rating": 4.7,
+        "category": {
+          "id": "modern",
+          "en": "modern"
+        },
+        "image": "https://i.pinimg.com/1200x/26/98/64/2698643694cdd40f0b3452c2881255c3.jpg",
+        "hotels": [
+          {
+            "name": "Lembang Village Hotel",
+            "rating": 4.6,
+            "price": {
+              "id": "IDR 1.800.000/malam",
+              "en": "IDR 1,800,000/night"
+            },
+            "image": "https://ak-d.tripcdn.com/images/0585i12000nbdbovu6455_R_600_400_R5.webp"
+          }
+        ],
+        "restaurants": []
+      },
+      {
+        "name": {
+          "id": "Dusun Bambu",
+          "en": "Dusun Bambu"
+        },
+        "description": {
+          "id": "Dusun Bambu adalah destinasi ekowisata yang menawarkan pemandangan alam yang asri dengan hamparan kebun bambu, danau, serta pegunungan di sekitarnya. Tempat ini memiliki berbagai restoran unik yang menyajikan kuliner lokal dan internasional, area rekreasi untuk keluarga, jalur berjalan kaki yang menyenangkan, serta spot foto yang Instagramable. Pengunjung juga dapat menikmati kegiatan seperti bersepeda, berperahu di danau, atau sekadar bersantai di gazebo tradisional sambil menikmati udara sejuk pegunungan Bandung. Dusun Bambu cocok untuk wisata keluarga, pasangan, maupun kelompok teman yang ingin berlibur dengan nuansa alam dan ketenangan.",
+          "en": "Dusun Bambu is an eco-tourism destination offering lush natural scenery with bamboo groves, a lake, and surrounding mountains. The place features unique restaurants serving local and international cuisine, recreational areas for families, pleasant walking paths, and Instagram-worthy photo spots. Visitors can enjoy activities like cycling, boating on the lake, or simply relaxing in traditional gazebos while enjoying the cool mountain air of Bandung. Dusun Bambu is ideal for family trips, couples, or groups of friends seeking a nature-filled and tranquil getaway."
+        },
+        "rating":4.8,
+        "category": {
+          "id": "alam",
+          "en": "nature"
+        },
+        "image": "https://i.pinimg.com/736x/cb/08/74/cb08742acf0d00528504f6d04634d0ab.jpg",
+        "hotels": [
+          {
+            "name": "Kampung Layung",
+            "rating": 4.8,
+            "price": {
+              "id": "IDR 2.200.000/malam",
+              "en": "IDR 2,200,000/night"
+            },
+            "image": "http://dusunbambu.id/images/Deluxe.jpg"
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Burangrang Restaurant",
+            "rating": 4.6,
+            "price": {
+              "id": "IDR 150.000/orang",
+              "en": "IDR 150,000/person"
+            },
+            "image": "http://dusunbambu.id/images/Venue-1.jpg"
+          }
+        ]
+      },
+      {
+        "name": {
+          "id": "Trans Studio Bandung",
+          "en": "Trans Studio Bandung"
+        },
+        "description": {
+          "id": "Trans Studio Bandung adalah taman hiburan indoor terbesar di Indonesia yang menawarkan berbagai wahana seru dan atraksi menarik untuk semua usia. Pengunjung dapat menikmati roller coaster, simulator 3D, wahana air, serta pertunjukan live yang spektakuler. Tempat ini juga dilengkapi dengan restoran, kafe, dan area bermain anak, sehingga cocok untuk keluarga, kelompok teman, maupun wisatawan yang ingin merasakan keseruan tanpa harus khawatir dengan cuaca. Selain wahana, Trans Studio Bandung sering mengadakan event khusus dan pertunjukan tematik yang menambah pengalaman berkunjung menjadi lebih menyenangkan dan tak terlupakan.",
+          "en": "Trans Studio Bandung is the largest indoor theme park in Indonesia, offering a wide variety of exciting rides and attractions for all ages. Visitors can enjoy roller coasters, 3D simulators, water rides, and spectacular live shows. The park also features restaurants, cafes, and children's play areas, making it ideal for families, groups of friends, and tourists looking for fun regardless of the weather. In addition to the rides, Trans Studio Bandung frequently hosts special events and themed performances that enhance the visiting experience, making it enjoyable and unforgettable."
+        },
+        "rating": 4.7,
+        "category": {
+          "id": "modern",
+          "en": "modern"
+        },
+        "image": "https://i.pinimg.com/736x/6d/da/10/6dda10c7b6232e9cda09a1237bd8ef79.jpg",
+        "hotels": [],
+        "restaurants": []
+      },
+      {
+        "name": {
+          "id": "Braga Street",
+          "en": "Braga Street"
+        },
+        "description": {
+          "id": "Braga Street adalah salah satu jalan paling ikonik di Bandung yang terkenal dengan nuansa kolonialnya. Jalan ini dipenuhi kafe, restoran, dan galeri seni yang menampilkan karya-karya lokal maupun internasional. Pengunjung dapat menikmati suasana santai sambil berjalan-jalan menyusuri bangunan bergaya kolonial, mengambil foto dengan latar arsitektur klasik, atau mencoba kuliner khas Bandung di berbagai kafe dan restoran yang tersebar sepanjang jalan. Braga Street juga sering menjadi lokasi acara seni, musik, dan festival budaya yang menambah daya tarik bagi wisatawan lokal maupun mancanegara.",
+          "en": "Braga Street is one of Bandung's most iconic streets, renowned for its colonial-era ambiance. The street is lined with cafes, restaurants, and art galleries showcasing both local and international works. Visitors can enjoy a leisurely stroll along classic colonial buildings, take photos with beautiful architectural backdrops, or sample Bandung's specialty cuisine at the many cafes and eateries. Braga Street also frequently hosts art events, music performances, and cultural festivals, enhancing its appeal to both local and international tourists."
+        },
+        "rating": 4.6,
+        "category": {
+          "id": "modern",
+          "en": "modern"
+        },
+        "image": "https://i.pinimg.com/736x/96/ba/34/96ba34b3ecdf652295e345e2d3d6af7c.jpg",
+        "hotels": [
+          {
+            "name": "Vue Palace Hotel",
+            "rating": 4.7,
+            "price": {
+              "id": "IDR 2.100.000/malam",
+              "en": "IDR 2,100,000/night"
+            },
+            "image": "https://pix8.agoda.net/property/53535696/0/20968cdcefca3150ac9cc0da65c1b6b3.jpeg?ce=0&s=600x"
+          }
+        ],
+        "restaurants": []
+      },
+      {
+        "name": {
+          "id": "Saung Angklung Udjo",
+          "en": "Saung Angklung Udjo"
+        },
+        "description": {
+          "id": "Saung Angklung Udjo adalah pusat kebudayaan di Bandung yang terkenal dengan pertunjukan musik angklung khas Sunda. Di sini, pengunjung dapat menyaksikan penampilan angklung yang dimainkan secara tradisional maupun modern, serta ikut berpartisipasi dalam memainkan alat musik bambu ini. Selain pertunjukan, Saung Angklung Udjo juga menyelenggarakan workshop, pameran seni, dan kegiatan edukatif untuk anak-anak dan dewasa, sehingga menjadi destinasi yang cocok untuk belajar tentang budaya Sunda sambil menikmati hiburan yang interaktif dan menyenangkan.",
+          "en": "Saung Angklung Udjo is a cultural center in Bandung renowned for its traditional Sundanese angklung performances. Visitors can watch angklung music performed in both traditional and modern styles, and even participate in playing this bamboo instrument. In addition to performances, Saung Angklung Udjo offers workshops, art exhibitions, and educational activities for children and adults, making it a perfect destination to learn about Sundanese culture while enjoying interactive and entertaining experiences."
+        },
+        "rating": 4.8,
+        "category": {
+          "id": "budaya",
+          "en": "budaya"
+        },
+        "image": "https://i.pinimg.com/1200x/7a/7c/e8/7a7ce86bdcc0a1375aa572331d1910fb.jpg",
+        "hotels": [],
+        "restaurants": []
+      },
+      {
+        "name": {
+          "id": "Tangkuban Perahu",
+          "en": "Tangkuban Perahu"
+        },
+        "description": {
+          "id": "Tangkuban Perahu adalah gunung berapi aktif yang terletak di utara Bandung, terkenal dengan kawahnya yang luas dan pemandangan alam yang menakjubkan. Pengunjung dapat menikmati udara sejuk pegunungan, berjalan di sekitar kawah, dan menyaksikan aktivitas vulkanik dari jarak aman. Selain itu, lokasi ini juga menawarkan berbagai fasilitas wisata seperti tempat makan, area parkir, dan toko suvenir, sehingga menjadi destinasi favorit untuk wisata alam, fotografi, dan pengalaman belajar tentang geologi.",
+          "en": "Tangkuban Perahu is an active volcano located north of Bandung, famous for its wide crater and breathtaking natural scenery. Visitors can enjoy the cool mountain air, walk around the crater, and observe volcanic activity from a safe distance. The site also provides various tourist facilities such as dining areas, parking, and souvenir shops, making it a popular destination for nature tourism, photography, and educational experiences about geology."
+        },
+        "rating": 4.7,
+        "category": {
+          "id": "gunung",
+          "en": "mountain"
+        },
+        "image": "https://i.pinimg.com/1200x/1e/2b/01/1e2b019bc4811b308fc09f4a094c0ba5.jpg",
+        "hotels": [],
+        "restaurants": []
+      }
+    ]
+  },
+  {
+    "city": "Medan",
+    "description": {
+      "id": "Medan adalah ibu kota Provinsi Sumatera Utara dan merupakan kota metropolitan terbesar di pulau Sumatera. Kota ini terkenal dengan keanekaragaman kuliner yang menggugah selera, termasuk masakan khas Batak, Melayu, dan Tionghoa. Selain kuliner, Medan memiliki sejumlah bangunan bersejarah, pasar tradisional, dan pusat perbelanjaan modern. Kota ini juga menjadi gerbang utama menuju destinasi wisata alam terkenal seperti Danau Toba, Bukit Lawang, dan Gunung Sibayak, menjadikannya pusat budaya, sejarah, dan petualangan di wilayah Sumatera.",
+      "en": "Medan is the capital of North Sumatra Province and the largest metropolitan city on the island of Sumatra. The city is famous for its diverse and delicious culinary offerings, including Batak, Malay, and Chinese cuisine. In addition to food, Medan features historic buildings, traditional markets, and modern shopping centers. It also serves as the main gateway to popular natural attractions such as Lake Toba, Bukit Lawang, and Mount Sibayak, making it a hub of culture, history, and adventure in the Sumatran region."
+    },
+    "explore": {
+      "id": "Jelajahi Medan",
+      "en": "Explore Medan"
+    },
+    "places": [
+      {
+        "name": {
+          "id": "Istana Maimun",
+          "en": "Istana Maimun"
+        },
+        "description": {
+          "id": "Istana Maimun adalah istana kerajaan bersejarah yang menjadi simbol kejayaan Kesultanan Deli. Terletak di pusat kota Medan, istana ini menampilkan arsitektur unik yang memadukan gaya Melayu, Islam, Spanyol, India, dan Italia. Pengunjung dapat menjelajahi ruang-ruang istana, melihat perabotan kuno, serta belajar tentang sejarah Kesultanan Deli dan budaya Melayu yang kaya.",
+          "en": "Maimun Palace is a historic royal palace that symbolizes the glory of the Deli Sultanate. Located in the heart of Medan, the palace features unique architecture blending Malay, Islamic, Spanish, Indian, and Italian styles. Visitors can explore the palace rooms, view ancient furnishings, and learn about the history of the Deli Sultanate and its rich Malay cultural heritage."
+        },
+        "rating": 4.7,
+        "category": {
+          "id": "sejarah",
+          "en": "history"
+        },
+        "image": "https://i.pinimg.com/736x/de/1d/0b/de1d0b227e08431031e12aea0eec3a63.jpg",
+        "hotels": [],
+        "restaurants": []
+      },
+      {
+        "name": {
+          "id": "Danau Toba",
+          "en": "Lake Toba"
+        },
+        "description": {
+          "id": "Danau Toba adalah danau vulkanik terbesar di dunia yang terbentuk akibat letusan supervulkan purba. Terletak di Sumatera Utara, danau ini menawarkan pemandangan spektakuler dengan air biru jernih, pulau Samosir di tengahnya, serta desa-desa tradisional Batak yang kaya budaya. Tempat ini populer untuk wisata alam, kegiatan air, dan pengalaman budaya lokal.",
+          "en": "Lake Toba is the largest volcanic lake in the world, formed by an ancient supervolcanic eruption. Located in North Sumatra, it offers spectacular views with clear blue waters, Samosir Island at its center, and traditional Batak villages rich in culture. The destination is popular for nature tourism, water activities, and local cultural experiences."
+        },
+        "rating": 4.9,
+        "category": {
+          "id": "alam",
+          "en": "nature"
+        },
+        "image": "https://www.tripsavvy.com/thmb/ltiBrAcMD5tmQTFEX4YVj7xtbdk=/5335x3543/filters:no_upscale():max_bytes(150000):strip_icc()/lake-toba-north-sumatra-indonesia-5b43bb0ec9e77c0037540c34.jpg",
+        "hotels": [
+          {
+            "name": "Lake Toba Resort",
+            "rating": 4.8,
+            "price": {
+              "id": "IDR 2.500.000/malam",
+              "en": "IDR 2,500,000/night"
+            },
+            "image": "https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2018/12/lake-toba-hotels-lakeview-feature.jpg"
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Sitopsi Tongging",
+            "rating": 4.7,
+            "price": {
+              "id": "IDR 150.000/orang",
+              "en": "IDR 150,000/person"
+            },
+            "image": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/1052/2024/03/13/Snapinstaapp_348868566_269143915526655_2111133166129166457_n_1080-2660704281.jpg"
+          }
+        ]
+      },
+      {
+        "name": {
+          "id": "Bukit Lawang",
+          "en": "Bukit Lawang"
+        },
+        "description": {
+          "id": "Bukit Lawang adalah pusat ekowisata terkenal di Sumatera Utara yang menawarkan pengalaman melihat orangutan Sumatera di habitat aslinya. Terletak di tepi Taman Nasional Gunung Leuser, pengunjung dapat menikmati trekking melalui hutan tropis, sungai yang jernih, dan keanekaragaman flora serta fauna yang menakjubkan, sambil belajar tentang konservasi satwa liar.",
+          "en": "Bukit Lawang is a famous eco-tourism center in North Sumatra that offers the experience of observing Sumatran orangutans in their natural habitat. Located on the edge of Gunung Leuser National Park, visitors can enjoy trekking through tropical forests, clear rivers, and a stunning variety of flora and fauna, while learning about wildlife conservation."
+        },
+        "rating": 4.9,
+        "category": {
+          "id": "alam",
+          "en": "nature"
+        },
+        "image": "https://i.pinimg.com/1200x/05/e7/79/05e77948e9c69738bf2e45da4a28d912.jpg",
+        "hotels": [],
+        "restaurants": []
+      },
+      {
+        "name": {
+          "id": "Tjong A Fie Mansion",
+          "en": "Tjong A Fie Mansion"
+        },
+        "description": {
+          "id": "Tjong A Fie Mansion adalah rumah bersejarah yang megah di Medan, menampilkan perpaduan arsitektur Tionghoa dan Eropa yang unik. Dibangun pada awal abad ke-20 oleh pengusaha Tionghoa terkenal, mansion ini memamerkan interior mewah, furnitur klasik, dan sejarah kehidupan keluarga Tjong A Fie yang berpengaruh dalam perkembangan ekonomi dan sosial Medan.",
+          "en": "Tjong A Fie Mansion is a grand historic house in Medan, showcasing a unique blend of Chinese and European architecture. Built in the early 20th century by a prominent Chinese businessman, the mansion features luxurious interiors, classic furniture, and tells the story of the influential Tjong A Fie family and their role in Medan's economic and social development."
+        },
+        "rating": 4.7,
+        "category": {
+          "id": "sejarah",
+          "en": "history"
+        },
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/aa/3b/15/photo1jpg.jpg?w=1400&h=-1&s=1",
+        "hotels": [],
+        "restaurants": []
+      },
+      {
+        "name": {
+          "id": "Pantai Cermin",
+          "en": "Beach Cermin"
+        },
+        "description": {
+          "id": "Pantai Cermin adalah destinasi populer di Sumatera Utara yang terkenal dengan pasir putihnya yang lembut dan pemandangan laut yang indah. Tempat ini dilengkapi dengan berbagai fasilitas rekreasi keluarga, termasuk area bermain anak, gazebo, dan restoran lokal. Pantai ini juga cocok untuk berenang, bersantai, dan menikmati matahari terbenam yang menakjubkan.",
+          "en": "Pantai Cermin is a popular destination in North Sumatra, renowned for its soft white sand and beautiful sea views. The beach offers a range of family recreation facilities, including children's playgrounds, gazebos, and local restaurants. It is perfect for swimming, relaxing, and enjoying breathtaking sunsets."
+        },
+        "rating": 4.6,
+        "category": {
+          "id": "pantai",
+          "en": "beach"
+        },
+        "image": "https://i.pinimg.com/736x/26/cf/96/26cf96dabfe0c4a64e6038140f49e1ad.jpg",
+        "hotels": [
+          {
+            "name": "Suntai Villa Resort",
+            "rating": 4.7,
+            "price": {
+              "id": "IDR 2.000.000/malam",
+              "en": "IDR 2,000,000/night"
+            },
+            "image": "https://ak-d.tripcdn.com/images/0220z12000dbrdd07FEA2_R_600_400_R5.webp"
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Pondok Sergai",
+            "rating": 4.5,
+            "price": {
+              "id": "IDR 140.000/orang",
+              "en": "IDR 140,000/person"
+            },
+            "image": "https://i0.wp.com/makanmana.net/wp-content/uploads/2024/01/JOE08018.jpg?resize=768%2C576&ssl=1"
+          }
+        ]
+      },
+      {
+        "name": {
+          "id": "Hillpark Sibolangit",
+          "en": "Hillpark Sibolangit"
+        },
+        "description": {
+          "id": "Hillpark Sibolangit adalah taman hiburan keluarga yang terletak di kawasan pegunungan Sibolangit, Sumatera Utara. Tempat ini menawarkan berbagai wahana seru, mulai dari roller coaster, kincir ria, hingga arena bermain anak, yang cocok untuk semua kalangan. Dengan udara sejuk pegunungan dan pemandangan hijau yang asri, Hillpark menjadi destinasi favorit untuk rekreasi keluarga dan liburan akhir pekan.",
+          "en": "Hillpark Sibolangit is a family amusement park located in the mountainous area of Sibolangit, North Sumatra. It features a variety of exciting rides, from roller coasters and ferris wheels to kids' play areas, making it suitable for all ages. Surrounded by cool mountain air and lush green scenery, Hillpark is a favorite destination for family recreation and weekend getaways."
+        },
+        "rating": 4.6,
+        "category": {
+          "id": "modern",
+          "en": "modern"
+        },
+        "image": "https://tse4.mm.bing.net/th/id/OIP.JkxqZuS_45pdsZKCV69QDwHaE7?pid=Api&P=0&h=180",
+        "hotels": [
+          {
+            "name": "Sibolangit Resort",
+            "rating": 4.7,
+            "price": {
+              "id": "IDR 2.200.000/malam",
+              "en": "IDR 2,200,000/night"
+            },
+            "image": "https://pix8.agoda.net/property/240658/0/e5785480ab0171b09f38909a1728d7dd.jpeg?ce=0&s=1024x"
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Hillview Cafe",
+            "rating": 4.5,
+            "price": {
+              "id": "IDR 120.000/orang",
+              "en": "IDR 120,000/person"
+            },
+            "image": "https://tse4.mm.bing.net/th/id/OIP.s_wN5HWWGnx9XReClvjdWwHaFn?pid=Api&P=0&h=180"
+          }
+        ]
+      },
+      {
+        "name": {
+          "id": "Air Terjun Sipiso-Piso",
+          "en": "Air Terjun Sipiso-Piso"
+        },
+        "description": {
+          "id": "Air Terjun Sipiso-Piso adalah salah satu air terjun paling ikonik di Sumatera Utara, terletak di Desa Tongging, Kabupaten Karo. Dengan ketinggian sekitar 120 meter, air terjun ini mengalir deras di tepi kaldera raksasa Danau Toba, menciptakan pemandangan yang menakjubkan. Dari puncak bukit, pengunjung dapat menikmati panorama indah Danau Toba yang luas, dikelilingi perbukitan hijau yang memukau, menjadikannya destinasi favorit para wisatawan lokal maupun mancanegara.",
+          "en": "Sipiso-Piso Waterfall is one of the most iconic waterfalls in North Sumatra, located in Tongging Village, Karo Regency. Standing at around 120 meters tall, the waterfall cascades powerfully at the edge of the massive Lake Toba caldera, creating a breathtaking view. From the hilltop, visitors can enjoy a stunning panoramic vista of the vast Lake Toba, surrounded by lush green hills, making it a favorite destination for both local and international tourists."
+        },
+        "rating": 4.8,
+        "category": {
+          "id": "alam",
+          "en": "nature"
+        },
+        "image": "https://tribratanews.polri.go.id/web/image/blog.post/63057/image",
+        "hotels": [
+          {
+            "name": "Lake Toba Resort",
+            "rating": 4.8,
+            "price": {
+              "id": "IDR 2.500.000/malam",
+              "en": "IDR 2,500,000/night"
+            },
+            "image": "https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2018/12/lake-toba-hotels-lakeview-feature.jpg"
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Sitopsi Tongging",
+            "rating": 4.7,
+            "price": {
+              "id": "IDR 150.000/orang",
+              "en": "IDR 150,000/person"
+            },
+            "image": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/1052/2024/03/13/Snapinstaapp_348868566_269143915526655_2111133166129166457_n_1080-2660704281.jpg"
+          }
+        ]
+      }
+    ]
+  }
+]
