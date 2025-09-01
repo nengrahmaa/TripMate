@@ -30,7 +30,7 @@ export default function Recommendation() {
   };
 
   return (
-    <section className="w-full px-6 md:px-20 lg:px-32 py-16 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <section className=" w-full px-6 md:px-20 lg:px-32 py-16 bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
       {/* Judul */}
       <div className="text-center mb-12">
         <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">
@@ -44,7 +44,7 @@ export default function Recommendation() {
       </div>
 
       {/* Grid Card */}
-      <div className="max-w-5xl mx-auto px-6 py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
+      <div className="max-w-5xl mx-auto px-4 py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2">
         {topDestinations.map((place, idx) => (
           <motion.div
             key={idx}

@@ -51,7 +51,7 @@ export default function Pagination({
         className={`p-2 rounded-md border text-sm transition-colors ${
           currentPage === 1
             ? "bg-gray-100 text-gray-400 cursor-not-allowed dark:bg-gray-800 dark:text-gray-500"
-            : "bg-white text-gray-700 border-gray-300 hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800"
+            : "bg-gray text-gray-700 border-gray-300 hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800"
         }`}
         title={t("previous")}
       >
@@ -82,7 +82,7 @@ export default function Pagination({
               }}
               className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
                 page === currentPage
-                  ? "bg-green-500 text-white dark:bg-green-600"
+                  ? "bg-cyan-800 text-white dark:bg-cyan-600"
                   : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800"
               }`}
             >

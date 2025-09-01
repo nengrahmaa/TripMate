@@ -1,5 +1,6 @@
 [
   {
+    "id": "papua",
     "city": "Papua",
     "description": {
       "id": "Papua adalah provinsi di ujung timur Indonesia yang terkenal dengan keindahan alamnya yang luar biasa dan keanekaragaman budaya yang unik. Dari pantai-pantai berpasir putih dengan air laut biru jernih hingga terumbu karang yang memukau, Papua menawarkan pengalaman menyelam yang tak tertandingi, terutama di Raja Ampat yang mendunia. Pegunungan yang menjulang, seperti Pegunungan Jayawijaya, dan lembah-lembah yang asri, seperti Lembah Baliem, memberikan kesempatan bagi para pendaki dan penjelajah untuk menikmati panorama alam yang menakjubkan. Hutan hujan tropis yang lebat dan Taman Nasional Lorentz menghadirkan keanekaragaman hayati yang luar biasa, termasuk flora dan fauna endemik. Selain itu, Papua juga kaya akan budaya lokal dari berbagai suku asli, dengan tradisi, tarian, dan festival yang memikat. Papua adalah surga tersembunyi di Indonesia dengan pantai eksotis, pegunungan menakjubkan, dan budaya yang kaya, menjadikannya destinasi impian bagi pecinta alam, penyelam, petualang, dan penikmat budaya.",
@@ -24,7 +25,7 @@
           "id": "pantai",
           "en": "beach"
         },
-        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/85/de/b7/piaynemo.jpg?w=1200&h=-1&s=1",
+        "image": "https://www.papuaexplorers.com/wp-content/uploads/2016/07/Wayag3.jpg",
         "hotels": [
           {
             "name": "Korpak Villa & Resort",
@@ -353,6 +354,7 @@
     ]
   },
   {
+    "id": "bali",
     "city": "Bali",
     "description": {
       "id": "Bali adalah pulau kecil di Indonesia yang menawarkan berbagai pengalaman wisata dalam satu tempat. Dari air terjun menakjubkan seperti Sekumpul di utara hingga pantai berpasir putih Nyang Nyang di selatan, Bali memiliki sesuatu untuk semua orang. Pecinta selancar dapat menaklukkan ombak di Batu Bolong, sementara pengunjung yang mencari hiburan malam dapat menikmati kelab di Seminyak. Hotel-hotel mewah di tebing Nusa Dua menawarkan pemandangan laut yang spektakuler, dan berbagai pura seperti Pura Gunung Kawi dan Pura Uluwatu menghadirkan pengalaman spiritual dan budaya. Jangan lewatkan pasar lokal seperti Pasar Seni Sukawati untuk karya seni dan kain tradisional, serta Pasar Malam Sindu untuk kuliner kaki lima seperti satai dan bakso. Bali memadukan keindahan alam, budaya, kuliner, dan hiburan menjadi destinasi yang tak terlupakan.",
@@ -708,6 +710,7 @@
     ]
   },
   {
+    "id": "yogyakarta",
     "city": "Yogyakarta",
     "description": {
       "id": "Yogyakarta, sering disebut 'Kota Pelajar', adalah pusat kebudayaan Jawa yang kaya akan sejarah, seni, dan kuliner. Kota ini memadukan nuansa tradisional dan modern, dari istana Sultan yang bersejarah hingga jalan-jalan yang ramai dengan pusat perbelanjaan dan kafe kreatif. Pengunjung dapat menikmati pengalaman budaya autentik seperti batik, gamelan, wayang, serta upacara tradisional. Kuliner khas Yogyakarta, termasuk gudeg, bakpia, dan wedang uwuh, menjadi daya tarik tersendiri. Selain itu, kota ini dekat dengan berbagai destinasi alam dan petualangan seperti Gunung Merapi dan Goa Pindul.",
@@ -732,7 +735,7 @@
           "id": "sejarah",
           "en": "history"
         },
-        "image": "https://whc.unesco.org/uploads/thumbs/site_0592_0027-1000-538-20131015114629.jpg",
+        "image": "https://wallpapercave.com/wp/wp4190861.jpg",
         "hotels": [
           {
             "name": "Plataran Heritage Borobudur Hotel",
@@ -907,6 +910,7 @@
     ]
   },
   {
+    "id": "bandung",
     "city": "Bandung",
     "description": {
       "id": "Bandung adalah ibu kota Provinsi Jawa Barat yang terkenal dengan udara sejuk dan suasana pegunungan yang menenangkan. Kota ini menawarkan berbagai destinasi wisata alam yang memukau seperti Kawah Putih, Tangkuban Perahu, dan Dusun Bambu, serta tempat rekreasi modern dan taman hiburan keluarga seperti Trans Studio Bandung. Bandung juga dikenal sebagai pusat kuliner yang menawarkan makanan tradisional Sunda, kafe modern, dan jajanan unik. Selain itu, kota ini menjadi surga belanja bagi wisatawan dengan factory outlet, pasar seni, dan pusat perbelanjaan yang beragam. Kombinasi keindahan alam, budaya, kuliner, dan belanja menjadikan Bandung destinasi wisata yang lengkap dan memikat bagi semua jenis wisatawan.",
@@ -924,14 +928,14 @@
         },
         "description": {
           "id": "Kawah Putih adalah sebuah danau kawah vulkanik yang terletak di daerah Ciwidey, Bandung, dengan air berwarna putih kehijauan yang mempesona. Fenomena warna air ini berubah-ubah tergantung kandungan belerang dan suhu, menciptakan pemandangan yang menakjubkan bagi para pengunjung. Kawah ini dikelilingi oleh tebing-tebing curam dan vegetasi pegunungan yang rimbun, membuat suasana di sekitar menjadi sejuk dan menenangkan. Tempat ini menjadi destinasi populer untuk wisatawan yang ingin menikmati keindahan alam, fotografi, atau sekadar bersantai di tengah udara segar pegunungan.",
-          "en": "Kawah Putih is a volcanic crater lake located in Ciwidey, Bandung, featuring mesmerizing white-green waters. The water’s color changes depending on sulfur content and temperature, creating a stunning and unique natural spectacle. Surrounded by steep cliffs and lush mountain vegetation, the area offers a cool and tranquil atmosphere. This site has become a popular destination for visitors seeking natural beauty, photography opportunities, or simply a relaxing escape in the fresh mountain air."
+          "en": "Kawah Putih is a volcanic crater lake located in Ciwidey, Bandung, featuring mesmerizing white-green waters. The waters color changes depending on sulfur content and temperature, creating a stunning and unique natural spectacle. Surrounded by steep cliffs and lush mountain vegetation, the area offers a cool and tranquil atmosphere. This site has become a popular destination for visitors seeking natural beauty, photography opportunities, or simply a relaxing escape in the fresh mountain air."
         },
         "rating": 4.8,
         "category": {
           "id": "alam",
           "en": "nature"
         },
-        "image": "https://i.pinimg.com/1200x/0a/fa/d4/0afad43c96aca65c3ab8da4f864fd47a.jpg",
+        "image": "https://ik.imagekit.io/tvlk/blog/2020/07/Bandung-Kawah-Putih-1185933808.jpg?tr=dpr-2,w-675",
         "hotels": [
           {
             "name": "Ciwidey Valley Resort",
@@ -992,7 +996,7 @@
           "id": "Dusun Bambu adalah destinasi ekowisata yang menawarkan pemandangan alam yang asri dengan hamparan kebun bambu, danau, serta pegunungan di sekitarnya. Tempat ini memiliki berbagai restoran unik yang menyajikan kuliner lokal dan internasional, area rekreasi untuk keluarga, jalur berjalan kaki yang menyenangkan, serta spot foto yang Instagramable. Pengunjung juga dapat menikmati kegiatan seperti bersepeda, berperahu di danau, atau sekadar bersantai di gazebo tradisional sambil menikmati udara sejuk pegunungan Bandung. Dusun Bambu cocok untuk wisata keluarga, pasangan, maupun kelompok teman yang ingin berlibur dengan nuansa alam dan ketenangan.",
           "en": "Dusun Bambu is an eco-tourism destination offering lush natural scenery with bamboo groves, a lake, and surrounding mountains. The place features unique restaurants serving local and international cuisine, recreational areas for families, pleasant walking paths, and Instagram-worthy photo spots. Visitors can enjoy activities like cycling, boating on the lake, or simply relaxing in traditional gazebos while enjoying the cool mountain air of Bandung. Dusun Bambu is ideal for family trips, couples, or groups of friends seeking a nature-filled and tranquil getaway."
         },
-        "rating":4.8,
+        "rating": 4.8,
         "category": {
           "id": "alam",
           "en": "nature"
@@ -1106,6 +1110,7 @@
     ]
   },
   {
+    "id": "medan",
     "city": "Medan",
     "description": {
       "id": "Medan adalah ibu kota Provinsi Sumatera Utara dan merupakan kota metropolitan terbesar di pulau Sumatera. Kota ini terkenal dengan keanekaragaman kuliner yang menggugah selera, termasuk masakan khas Batak, Melayu, dan Tionghoa. Selain kuliner, Medan memiliki sejumlah bangunan bersejarah, pasar tradisional, dan pusat perbelanjaan modern. Kota ini juga menjadi gerbang utama menuju destinasi wisata alam terkenal seperti Danau Toba, Bukit Lawang, dan Gunung Sibayak, menjadikannya pusat budaya, sejarah, dan petualangan di wilayah Sumatera.",
@@ -1130,7 +1135,7 @@
           "id": "sejarah",
           "en": "history"
         },
-        "image": "https://i.pinimg.com/736x/de/1d/0b/de1d0b227e08431031e12aea0eec3a63.jpg",
+        "image": "https://1.bp.blogspot.com/-qwLniSlO-vc/XXJ8dtBAY0I/AAAAAAAAsro/6xtYNokF_OE6cPhFnvpYn_3R5u-fB76bgCLcBGAs/s1600/20190831_154719-01.jpeg",
         "hotels": [],
         "restaurants": []
       },
@@ -1298,7 +1303,7 @@
           "id": "alam",
           "en": "nature"
         },
-        "image": "https://tribratanews.polri.go.id/web/image/blog.post/63057/image",
+        "image": "https://lh5.googleusercontent.com/UZimQ9nrg-qhNDjZEFUTDevt31Qdtz7qfWmgf7beG8b41dsWtHyKTKD08b_aEZSqR7RI5LCaFFljkK2k4KZ-_Vk03cTbt6hZyrK04EbqMgjGm7u42VLWZubiKmikrQWT3uscJHGu5GxL9w9pGAQlDJw",
         "hotels": [
           {
             "name": "Lake Toba Resort",
@@ -1307,7 +1312,7 @@
               "id": "IDR 2.500.000/malam",
               "en": "IDR 2,500,000/night"
             },
-            "image": "https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2018/12/lake-toba-hotels-lakeview-feature.jpg"
+            "image": "https://pix8.agoda.net/property/289522/0/2fcbdc5cdb300eba06deaff0c6adec78.jpeg?ce=2&s=1024x"
           }
         ],
         "restaurants": [

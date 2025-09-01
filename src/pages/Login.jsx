@@ -54,12 +54,12 @@ export default function Login({ isModal = true, onClose }) {
           </button>
         )}
 
-        <div className="hidden md:flex flex-col justify-center items-center w-1/2 bg-gradient-to-b from-blue-500 to-blue-700 text-white p-8">
+        <div className="hidden md:flex flex-col justify-center items-center w-1/2 bg-gradient-to-b from-cyan-500 to-cyan-700 text-white p-8">
           <h2 className="text-3xl font-bold mb-2">{t("login.welcome_back")}</h2>
           <p className="text-lg">{t("login.prompt_message")}</p>
         </div>
 
-        <div className="flex flex-col justify-center items-center w-full md:w-1/2 bg-white dark:bg-gray-900 p-8">
+        <div className="flex flex-col justify-center items-center w-full md:w-1/2 bg-white dark:bg-gray-800 p-8">
           <h1 className="text-2xl font-bold text-gray-800 dark:text-white mb-6">
             {t("login.title")}
           </h1>
@@ -71,7 +71,7 @@ export default function Login({ isModal = true, onClose }) {
                 placeholder={t("login.username")}
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-                className="w-full pl-10 pr-3 py-2 rounded-full border bg-gray-50 dark:bg-gray-800 dark:text-white focus:ring-2 focus:ring-green-500"
+                className="w-full pl-10 pr-3 py-2 rounded-full border bg-gray-50 dark:bg-gray-800 dark:text-white focus:ring-2 focus:ring-cyan-500"
                 required
               />
             </div>
@@ -83,14 +83,14 @@ export default function Login({ isModal = true, onClose }) {
                 placeholder={t("login.password")}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full pl-10 pr-3 py-2 rounded-full border bg-gray-50 dark:bg-gray-800 dark:text-white focus:ring-2 focus:ring-green-500"
+                className="w-full pl-10 pr-3 py-2 rounded-full border bg-gray-50 dark:bg-gray-800 dark:text-white focus:ring-2 focus:ring-cyan-500"
                 required
               />
             </div>
 
             <button
               type="submit"
-              className="w-full py-2 bg-green-600 hover:bg-green-700 text-white rounded-full font-medium transition"
+              className="w-full py-2 bg-cyan-600 hover:bg-cyan-700 text-white rounded-full font-medium transition"
             >
               {t("login.button")}
             </button>
@@ -100,7 +100,7 @@ export default function Login({ isModal = true, onClose }) {
             {t("login.no_account")}{" "}
             <Link
               to="/register"
-              className="text-green-600 hover:underline dark:text-green-400 cursor-pointer"
+              className="text-cyan-600 hover:underline dark:text-cyan-400 cursor-pointer"
             >
               {t("login.register_link")}
             </Link>

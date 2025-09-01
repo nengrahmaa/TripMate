@@ -1,16 +1,12 @@
-import { createContext, useContext, useState, useEffect } from "react";
+import { createContext, useContext, useState } from "react";
 
 const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
-  const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")) || null);
-
-  // Update state saat localStorage berubah
-  useEffect(() => {
-    const syncAuth = () => setUser(JSON.parse(localStorage.getItem("user")) || null);
-    window.addEventListener("storage", syncAuth);
-    return () => window.removeEventListener("storage", syncAuth);
-  }, []);
+  const [user, setUser] = useState(() => {
+    const savedUser = localStorage.getItem("user");
+    return savedUser ? JSON.parse(savedUser) : null;
+  });
 
   const login = (userData) => {
     localStorage.setItem("user", JSON.stringify(userData));

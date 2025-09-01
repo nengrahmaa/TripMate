@@ -48,7 +48,7 @@ export default function Home() {
         {/* Hero Text */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 -translate-y-35 sm:-translate-y-16">
           <motion.h1
-            className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -74,8 +74,8 @@ export default function Home() {
               return (
                 <motion.div
                   key={item.id}
-                  className={`w-24 sm:w-28 md:w-32 lg:w-36 h-24 sm:h-28 md:h-32 lg:h-36 rounded-lg overflow-hidden cursor-pointer border-4 transition-all duration-300 ${isActive
-                    ? "border-white shadow-xl scale-105"
+                  className={`w-22 sm:w-26 md:w-30 lg:w-34 h-22 sm:h-26 md:h-30 lg:h-34 rounded-lg overflow-hidden cursor-pointer border-4 transition-all duration-300 ${isActive
+                    ? "border-white shadow-xl scale-100"
                     : "border-transparent"
                     }`}
                   onClick={() => setActiveIndex(idx)}

@@ -1,10 +1,17 @@
-import { useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useNavigate, useParams, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
+import { ArrowLeft } from "lucide-react";
 import StarRating from "../components/StarRating";
 
 export default function ReviewPage() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
+  const { t } = useTranslation();
+
+  const editingReview = location.state?.review || null;
 
   const [rating, setRating] = useState(0);
   const [visitTime, setVisitTime] = useState("");
@@ -14,6 +21,15 @@ export default function ReviewPage() {
   const [photo, setPhoto] = useState(null);
 
   const storedUser = JSON.parse(localStorage.getItem("user")) || { name: "Guest" };
+
+  useEffect(() => {
+    if (editingReview) {
+      setRating(editingReview.rating);
+      setTitle(editingReview.title);
+      setText(editingReview.text);
+      setPhoto(editingReview.photo || null);
+    }
+  }, [editingReview]);
 
   const handlePhotoUpload = (e) => {
     const file = e.target.files[0];
@@ -25,107 +41,159 @@ export default function ReviewPage() {
   };
 
   const handleSubmit = () => {
-    if (!rating || !text.trim() || !title.trim()) return alert("Lengkapi semua data!");
+    if (!rating || !text.trim() || !title.trim() || !photo) {
+      alert(t("review_page.complete_all_fields"));
+      return;
+    }
 
-    const newReview = {
-      id: storedUser.id,
-      user: storedUser.username,
-      rating,
-      title: title.trim(),
-      text: text.trim(),
-      date: new Date().toLocaleDateString(),
-      photo,
-    };
+    const key = `reviews_${id}`;
+    let existingReviews = JSON.parse(localStorage.getItem(key)) || [];
 
-    const existingReviews = JSON.parse(localStorage.getItem(`reviews_${id}`)) || [];
-    existingReviews.push(newReview);
-    localStorage.setItem(`reviews_${id}`, JSON.stringify(existingReviews));
-    localStorage.setItem(`reviews`, JSON.stringify(existingReviews));
-    navigate(`/detail/${id}`);
+    if (editingReview) {
+      existingReviews = existingReviews.map((rev) =>
+        rev.id === editingReview.id && rev.date === editingReview.date
+          ? { ...rev, rating, title, text, photo }
+          : rev
+      );
+    } else {
+      const newReview = {
+        id: Date.now(),
+        id_user: storedUser.id,
+        user: storedUser.username,
+        rating,
+        title: title.trim(),
+        text: text.trim(),
+        date: new Date().toLocaleDateString(),
+        photo,
+      };
+      existingReviews.push(newReview);
+    }
+
+    localStorage.setItem(key, JSON.stringify(existingReviews));
+    navigate(-1);
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-6 py-10">
-      <h1 className="text-3xl font-bold mb-6">
-        Beri tahu kami tentang kunjungan Anda
-      </h1>
+    <div className="bg-gray-100 dark:bg-gray-900 transition-colors duration-500">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
+      className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-20 space-y-6 sm:space-y-10"
+    >
+      {/* Header */}
+            <div className="flex items-center justify-start mb-8 gap-6">
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={() => navigate(-1)}
+          className="flex items-center gap-1 px-2.5 py-1.5 text-cyan-700 bg-gray-100 dark:bg-gray-700 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-600 rounded-full text-sm font-medium transition-colors"
+        >
+          <ArrowLeft className="w-5 h-5 sm:w-6 sm:h-6 text-cyan-700" />
+        </motion.button>
+
+        <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-cyan-700 dark:text-gray-200">
+          {editingReview ? t("review_page.edit_title") : t("review_page.add_title")}
+        </h1>
+      </div>
 
       {/* Rating */}
-      <div className="mb-4">
-        <p className="mb-2 font-medium">Bagaimana penilaian Anda?</p>
+      <div className="mb-6">
+        <p className="mb-2 font-semibold">{t("review_page.rating_label")}</p>
         <StarRating rating={rating} setRating={setRating} interactive />
       </div>
 
-      {/* Kapan pergi */}
-      <div className="mb-4">
-        <label className="block font-medium mb-2">Kapan Anda pergi?</label>
-        <select
-          className="border rounded p-2 w-full"
+      {/* Waktu kunjungan */}
+      <div className="mb-6">
+        <label className="block font-semibold mb-2">
+          {t("review_page.visit_time")}
+        </label>
+        <input
+          type="date"
+          className="border rounded-lg p-3 w-full text-sm sm:text-base focus:ring-2 focus:ring-blue-400 focus:outline-none"
           value={visitTime}
           onChange={(e) => setVisitTime(e.target.value)}
-        >
-          <option value="">Pilih waktu</option>
-          <option value="Januari 2025">Januari 2025</option>
-          <option value="Februari 2025">Februari 2025</option>
-          <option value="Maret 2025">Maret 2025</option>
-        </select>
+        />
       </div>
 
       {/* Dengan siapa */}
-      <div className="mb-4">
-        <p className="mb-2 font-medium">Dengan siapa Anda pergi?</p>
+      <div className="mb-6">
+        <p className="mb-2 font-semibold">{t("review_page.with_who")}</p>
         <div className="flex gap-3 flex-wrap">
           {["Bisnis", "Pasangan", "Keluarga", "Teman", "Sendirian"].map((opt) => (
             <button
               key={opt}
               onClick={() => setWithWho(opt)}
-              className={`px-4 py-2 rounded-full border ${
-                withWho === opt ? "bg-green-600 text-white" : "bg-gray-100"
-              }`}
+              className={`px-4 py-2 rounded-full border text-sm sm:text-base transition ${withWho === opt
+                ? "bg-blue-600 text-white border-blue-600"
+                : "bg-gray-100 hover:bg-gray-200"
+                }`}
             >
-              {opt}
+              {t(`review_page.with_options.${opt.toLowerCase()}`)}
             </button>
           ))}
         </div>
       </div>
 
-      {/* Tulis ulasan */}
-      <div className="mb-4">
-        <label className="block font-medium mb-2">Tulis ulasan</label>
-        <textarea
-          className="border rounded p-3 w-full h-32"
-          placeholder="Ceritakan pengalaman Anda..."
-          value={text}
-          onChange={(e) => setText(e.target.value)}
-        />
-      </div>
-
       {/* Judul ulasan */}
-      <div className="mb-4">
-        <label className="block font-medium mb-2">Judul ulasan</label>
+      <div className="mb-6">
+        <label className="block font-semibold mb-2">{t("review_page.review_title")}</label>
         <input
           type="text"
-          className="border rounded p-3 w-full"
-          placeholder="Beri judul ulasan Anda"
+          className="border rounded-lg p-3 w-full text-sm sm:text-base focus:ring-2 focus:ring-blue-400"
+          placeholder={t("review_page.title_placeholder")}
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
       </div>
 
-      {/* Upload foto */}
+
+      {/* Teks ulasan */}
       <div className="mb-6">
-        <label className="block font-medium mb-2">Tambahkan foto (opsional)</label>
-        <input type="file" accept="image/*" onChange={handlePhotoUpload} />
-        {photo && <img src={photo} alt="Preview" className="mt-3 w-40 h-40 object-cover rounded-lg" />}
+        <label className="block font-semibold mb-2">{t("review_page.review_text")}</label>
+        <textarea
+          className="border rounded-lg p-3 w-full h-32 text-sm sm:text-base focus:ring-2 focus:ring-blue-400"
+          placeholder={t("review_page.text_placeholder")}
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+        />
       </div>
 
-      {/* Tombol Kirim */}
-      <button
-        onClick={handleSubmit}
-        className="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition"
-      >
-        Kirim Ulasan
-      </button>
+      {/* Upload foto */}
+      <div className="mb-8">
+        <label className="block font-semibold mb-2">{t("review_page.upload_photo")}</label>
+        <input
+          type="file"
+          accept="image/*"
+          onChange={handlePhotoUpload}
+          className="block w-full text-sm"
+        />
+        {photo && (
+          <img
+            src={photo}
+            alt="Preview"
+            className="mt-3 w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg shadow-md"
+          />
+        )}
+      </div>
+
+      {/* Tombol aksi */}
+      <div className="flex flex-col sm:flex-row gap-4">
+        <button
+          onClick={handleSubmit}
+          className="bg-blue-600 text-white px-6 py-3 rounded-full text-sm sm:text-base hover:bg-blue-700 shadow-md transition"
+        >
+          {editingReview ? t("review_page.update_button") : t("review_page.submit_button")}
+        </button>
+
+        <button
+          onClick={() => navigate(-1)}
+          className="bg-gray-300 text-gray-700 px-6 py-3 rounded-full text-sm sm:text-base hover:bg-gray-400 shadow-md transition"
+        >
+          {t("review_page.cancel_button")}
+        </button>
+      </div>
+    </motion.div>
     </div>
   );
 }

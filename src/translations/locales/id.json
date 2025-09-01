@@ -11,7 +11,8 @@
     "logout": "Keluar",
     "dark_mode": "Mode Gelap",
     "light_mode": "Mode Terang",
-    "login_required": "Silakan login untuk mengakses halaman ini."
+    "login_required": "Silakan login untuk mengakses halaman ini.",
+    "no_result": "Tidak ada hasil"
   },
   "login": {
     "title": "Masuk",
@@ -37,7 +38,12 @@
     "login_link": "Masuk di sini",
     "username_exists": "Nama pengguna ini sudah digunakan.",
     "password_mismatch": "Kata sandi tidak cocok!",
-    "success": "Pendaftaran berhasil! Silakan masuk."
+    "success": "Pendaftaran berhasil! Silakan masuk.",
+    "error_username_required": "Nama pengguna diperlukan",
+    "error_username_short": "Nama pengguna minimal harus 3 karakter",
+    "error_password_required": "Kata sandi diperlukan",
+    "error_password_short": "Kata sandi minimal harus 6 karakter",
+    "error_confirm_required": "Harap konfirmasi kata sandi Anda"
   },
   "alerts": {
     "required": "Nama pengguna dan kata sandi harus diisi!"
@@ -45,9 +51,8 @@
   "home": {
     "hero_title": "Mulai Petualanganmu di Indonesia!",
     "hero_subtitle": "Rencanakan perjalanan dengan mudah, temukan tempat-tempat tersembunyi, dan ciptakan kenangan tak terlupakan.",
-    "search_placeholder": "Cari berdasarkan kota, tempat, atau kategori",
-    "top_rated": "Destinasi Paling Populer",
-    "view_more": "Lihat Selengkapnya"
+    "search_placeholder": "Cari berdasarkan kota atau tempat",
+    "top_rated": "Destinasi Paling Populer"
   },
   "explore": {
     "title": "Jelajahi Indonesia",
@@ -59,17 +64,21 @@
     "location": "Lokasi",
     "show_more": "Lihat Selengkapnya",
     "all": "Semua",
-    "no_data": "Tidak ada data"
+    "no_data": "Tidak ada data",
+    "destinations_in": "Destinasi yang bisa anda kunjungi"
   },
   "profile": {
     "title": "Profil Saya",
-    "wishlist": "Wishlist",
+    "greeting": "Halo, {{username}}!",
+    "wishlist": "Favorit",
     "wishlist_desc": "Daftar tempat yang Anda simpan untuk dikunjungi nanti.",
-    "reviews": "Ulasan Saya",
+    "my_reviews": "Ulasan Saya",
     "reviews_desc": "Kelola dan edit ulasan Anda.",
     "dark_mode": "Mode Gelap",
     "logout": "Keluar",
-    "confirm_logout": "Apakah kamu yakin ingin logout?"
+    "confirm_logout": "Apakah kamu yakin ingin logout?",
+    "alert_edit": "Fitur edit profil segera hadir!",
+    "my_trips": "Trip saya"
   },
   "footer": {
     "description": "Menghubungkan traveler dengan destinasi, hotel, dan restoran terbaik di Indonesia.",
@@ -93,17 +102,16 @@
     "not_found": "Oops! Halaman tidak ditemukan.",
     "server_error": "Terjadi kesalahan server. Silakan coba lagi nanti."
   },
-  "buttons": {
-    "save": "Simpan",
-    "cancel": "Batal",
-    "add_review": "Tambah Ulasan",
-    "edit": "Edit",
-    "delete": "Hapus"
-  },
   "trip": {
     "title": "Trip Saya",
-    "new_trip": "+ Buat trip baru",
+    "new_trip": "Buat trip baru",
     "empty_message": "Rencanakan perjalanan pertama Anda dengan membuat trip.",
+    "back": "Kembali",
+    "add_date": "Tambahkan tanggal",
+    "start_date": "Tanggal mulai",
+    "end_date": "Tanggal berakhir",
+    "cancel": "Batal",
+    "apply": "Terapkan",
     "form": {
       "title": "Rencanakan perjalanan",
       "name": "Nama perjalanan",
@@ -118,6 +126,52 @@
     "back": "Kembali",
     "hotel": "Hotel",
     "restaurant": "Restoran",
-    "nearby_recommendations": "Rekomendasi Terdekat"
+    "nearby_recommendations": "Rekomendasi Terdekat",
+    "no_hotels": "tidak ada hotel yang tersedia",
+    "no_restaurants": "tidak ada restoran yang tersedia",
+    "added_to_favorites": "Menambahkan ke favorit",
+    "removed_from_favorites": "Menghapus dari favorit"
+  },
+  "reviews": {
+    "add_review": "Tambah Ulasan",
+    "visitor_reviews": "Ulasan Pengunjung",
+    "no_data": "Belum ada ulasan, jadilah yang pertama.",
+    "title": "Ulasan Saya",
+    "empty": "Tidak ada Ulasan",
+    "place_id": "Destinasi",
+    "back": "Kembali",
+    "edit": "Edit",
+    "delete": "Hapus",
+    "confirm_delete": "Apakah anda yakin akan menghapus review ini?"
+  },
+  "review_page": {
+    "add_title": "Beri tahu kami tentang kunjungan Anda",
+    "edit_title": "Edit Ulasan Anda",
+    "rating_label": "Bagaimana penilaian Anda?",
+    "visit_time": "Kapan Anda pergi?",
+    "select_visit_time": "Pilih waktu kunjungan",
+    "with_who": "Dengan siapa Anda pergi?",
+    "with_options": {
+      "bisnis": "Bisnis",
+      "pasangan": "Pasangan",
+      "keluarga": "Keluarga",
+      "teman": "Teman",
+      "sendirian": "Sendirian"
+    },
+    "review_text": "Tulis ulasan",
+    "text_placeholder": "Ceritakan pengalaman Anda...",
+    "review_title": "Judul ulasan",
+    "title_placeholder": "Beri judul ulasan Anda",
+    "upload_photo": "Unggah foto (wajib)",
+    "complete_all_fields": "Lengkapi semua data, termasuk foto.",
+    "submit_button": "Kirim Ulasan",
+    "update_button": "Update Ulasan",
+    "cancel_button": "Batal"
+  },
+  "favorites": {
+    "title": "Tempat Favorit",
+    "back": "Kembali",
+    "empty": "Kamu belum memiliki tempat favorit.",
+    "discover": "Lihat"
   }
 }

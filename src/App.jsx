@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
 import ScrollToTop from './components/ScrollToTop';
+import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
 
@@ -13,7 +14,6 @@ function App() {
       <Header />
       <Outlet />
       <Footer />
-      <BackToTop />
     </>
   )
 }

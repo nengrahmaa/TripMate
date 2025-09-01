@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate, useLocation, useSearchParams } from "react-router-dom";
 import data from "../data/data.json";
 import StarRating from "../components/StarRating";
@@ -19,7 +20,6 @@ export default function Explore() {
     city.places.map(place => ({ ...place, city: city.city }))
   );
 
-  // Ambil filter dari URL query ?city=xxx, default ke allLabel
   const [activeCity, setActiveCity] = useState(searchParams.get("city") || allLabel);
 
   // Pagination
@@ -78,87 +78,79 @@ export default function Explore() {
   }, [location.search, allLabel]);
 
   return (
-    <div className="max-w-5xl mx-auto px-10 sm:px-6 py-30">
-      {/* Filter + Sort */}
-      <FilterBar
-        cities={cities}
-        activeCity={activeCity}
-        onCityChange={handleCityChange}
-        sortOptions={sortOptions}
-        activeSort={activeSort}
-        onSortChange={handleSortChange}
-      />
+    <div className="bg-gray-100 dark:bg-gray-900 transition-colors duration-500">
 
-      {/* Grid destinasi */}
-      <div className="grid gap-5 sm:grid-cols-3 lg:grid-cols-4">
-        {currentItems.length > 0 ? (
-          currentItems.map((place, index) => {
-            const globalIndex = indexOfFirstItem + index;
-            return (
-              <div
-                key={globalIndex}
-                className="relative rounded-2xl overflow-hidden shadow-md group cursor-pointer"
-              >
-                {/* Gambar */}
-                <img
-                  src={place.image}
-                  alt={place.name[i18n.language]}
-                  className="w-full h-[50vh] sm:h-[50vh] lg:h-[60vh] object-cover transition-transform duration-300 group-hover:scale-105"
-                />
+      <div className="max-w-5xl mx-auto px-5 sm:px-6 py-20 sm:py-30 ">
+        <FilterBar
+          cities={cities}
+          activeCity={activeCity}
+          onCityChange={handleCityChange}
+          sortOptions={sortOptions}
+          activeSort={activeSort}
+          onSortChange={handleSortChange}
+        />
 
-                {/* Overlay bawah untuk info */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-4 flex flex-col justify-end">
-                  {/* Info destinasi (hilang saat hover) */}
-                  <div className="transition-opacity duration-300 group-hover:opacity-0">
-                    <h3 className="text-white font-bold text-lg">
-                      {place.name[i18n.language]}
-                    </h3>
-                    <p className="text-gray-300 font-medium text-sm">
-                      {place.category[i18n.language]}
-                    </p>
-                    <div className="flex items-center mt-1">
-                      <StarRating rating={place.rating} />
-                      <span className="ml-2 text-white">{place.rating}</span>
+        {/* Grid destinasi */}
+        <div className="grid gap-5 sm:grid-cols-3 lg:grid-cols-4">
+          <AnimatePresence mode="wait">
+            {currentItems.length > 0 ? (
+              currentItems.map((place) => (
+                <motion.div
+                  key={`${place.city}-${place.name.en}`} // key unik global
+                  layout
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 10 }}
+                  transition={{ duration: 0.55, ease: "easeInOut" }}
+                  className="relative rounded-2xl overflow-hidden shadow-md group cursor-pointer"
+                >
+                  {/* Gambar */}
+                  <img
+                    src={place.image}
+                    alt={place.name[i18n.language]}
+                    className="w-full h-[50vh] sm:h-[40vh] lg:h-[60vh] object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+
+                  {/* Overlay bawah untuk info */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-4 flex flex-col justify-end">
+                    <div className="transition-opacity duration-300 group-hover:opacity-0">
+                      <h3 className="text-white font-bold text-lg">{place.name[i18n.language]}</h3>
+                      <p className="text-gray-300 font-medium text-sm">{place.category[i18n.language]}</p>
+                      <div className="flex items-center mt-1">
+                        <StarRating rating={place.rating} />
+                        <span className="ml-2 text-white">{place.rating}</span>
+                      </div>
                     </div>
+
+                    <button
+                      onClick={() =>
+                        navigate(`/detail/${place.city}-${place.name.en}?city=${activeCity}`)
+                      }
+                      className="absolute inset-0 flex flex-col items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-lg font-semibold cursor-pointer"
+                    >
+                      <span>{t("explore.show_more")}</span>
+                      <span className="mt-2 block h-[2px] bg-white w-0 group-hover:w-24 transition-all duration-500 ease-out"></span>
+                    </button>
                   </div>
-
-                  {/* Tombol Show More dengan garis */}
-                  <button
-                    onClick={() =>
-                      navigate(
-                        `/detail/${place.city}-${place.name.en}?city=${activeCity}`
-                      )
-                    }
-                    className="absolute inset-0 flex flex-col items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-lg font-semibold"
-                  >
-                    {/* Teks */}
-                    <span>{t("explore.show_more")}</span>
-
-                    {/* Opsi 1: Garis dengan animasi dari tengah */}
-                    <span className="mt-2 block h-[2px] bg-white w-0 group-hover:w-24 transition-all duration-500 ease-out"></span>
-
-                    {/* Opsi 2: Garis statis (non-animasi, selalu muncul saat hover) */}
-                    {/* <span className="mt-2 w-24 h-[2px] bg-white"></span> */}
-                  </button>
-                </div>
-              </div>
-            );
-          })
-        ) : (
-          <p className="text-center col-span-3">{t("explore.no_data")}</p>
+                </motion.div>
+              ))
+            ) : (
+              <p className="text-center col-span-3">{t("explore.no_data")}</p>
+            )}
+          </AnimatePresence>
+        </div>
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <div className="mt-8 flex justify-center">
+            <Pagination
+              currentPage={currentPage}
+              totalPages={totalPages}
+              handleNextPage={() => currentPage < totalPages && setCurrentPage(currentPage + 1)}
+              handlePreviousPage={() => currentPage > 1 && setCurrentPage(currentPage - 1)}
+            />
+          </div>
         )}
       </div>
-      {/* Pagination */}
-      {totalPages > 1 && (
-        <div className="mt-8 flex justify-center">
-          <Pagination
-            currentPage={currentPage}
-            totalPages={totalPages}
-            handleNextPage={() => currentPage < totalPages && setCurrentPage(currentPage + 1)}
-            handlePreviousPage={() => currentPage > 1 && setCurrentPage(currentPage - 1)}
-          />
-        </div>
-      )}
     </div>
   );
 }
