@@ -30,7 +30,7 @@ export default function BackToTop({ scrollThreshold = 300 }) {
           exit={{ opacity: 0, y: 50 }}
           transition={{ duration: 0.3 }}
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 bg-gray-400 text-cyan-800 dark:bg-gray-800 dark:text-cyan-300 p-3 rounded-full shadow-lg hover:bg-gray-700 hover:text-white dark:hover:bg-gray-600 dark:hover:text-cyan-100 focus:outline-none"        >
+          className="fixed bottom-8 right-8 bg-gray-400 text-cyan-800 dark:bg-gray-700 dark:text-cyan-300 p-3 rounded-full shadow-lg hover:bg-gray-700 hover:text-white dark:hover:bg-gray-600 dark:hover:text-cyan-100 focus:outline-none"        >
           <ArrowUp className="w-5 h-5" />
         </motion.button>
       )}

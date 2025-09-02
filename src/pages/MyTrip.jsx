@@ -22,6 +22,8 @@ export default function MyTrips({ userId }) {
   const [tempEndDate, setTempEndDate] = useState(null);
   const storedUser = JSON.parse(localStorage.getItem("user")) || { name: "Guest" };
 
+  const [tripToDelete, setTripToDelete] = useState(null);
+
   const toDateOrNull = (v) => {
     if (!v) return null;
     const d = v instanceof Date ? v : new Date(v);
@@ -148,9 +150,13 @@ export default function MyTrips({ userId }) {
     setTempEndDate(null);
   };
 
-  const handleDeleteTrip = (tripId) => {
-    const updatedTrips = trips.filter((trip) => trip.id !== tripId);
-    saveTrips(updatedTrips);
+
+  const isMarkDoneEnabled = (trip) => {
+    if (!trip.endDate) return false;
+    const todayStr = new Date().toDateString();
+    const startStr = trip.startDate ? new Date(trip.startDate).toDateString() : null;
+    const endStr = new Date(trip.endDate).toDateString();
+    return (startStr && todayStr >= startStr && todayStr <= endStr) || todayStr === endStr;
   };
 
   return (
@@ -167,12 +173,11 @@ export default function MyTrips({ userId }) {
             <ArrowLeft className="w-5 h-5 sm:w-6 sm:h-6 text-cyan-700" />
           </motion.button>
 
-          <h1 className="text-cyan-700 text-2xl md:text-3xl font-bold dark:text-white truncate">
+          <h1 className="text-cyan-700 text-2xl md:text-3xl font-bold dark:text-gray-50 truncate">
             {t("trip.title")}
           </h1>
         </div>
 
-        {/* Empty State */}
         {trips.length === 0 && (
           <div className="text-center py-10">
             <button
@@ -189,12 +194,11 @@ export default function MyTrips({ userId }) {
           </div>
         )}
 
-        {/* Trips List */}
         {trips.length > 0 && (
           <div className="space-y-4">
             <button
               onClick={() => setShowForm(true)}
-              className="flex items-center justify-center gap-2 border dark:border-gray-600 rounded-lg w-full py-4 text-lg font-medium hover:bg-gray-50 dark:hover:bg-gray-700 transition"
+              className="flex items-center justify-center gap-2 border text-cyan-900 dark:text-gray-200 dark:border-gray-600 rounded-lg w-full py-4 text-lg font-medium hover:bg-gray-50 dark:hover:bg-gray-700 transition"
             >
               <PlusCircle className="w-5 h-5" />
               {t("trip.new_trip")}
@@ -206,19 +210,24 @@ export default function MyTrips({ userId }) {
                 const ed = toDateOrNull(trip.endDate);
                 return (
                   <div key={trip.id} className="relative">
-                    {/* Background merah untuk swipe delete */}
                     <div className="absolute inset-0 bg-red-500 rounded-lg flex items-center justify-end pr-6">
-                      <Trash2 className="text-white w-6 h-6" />
+                      <Trash2
+                        className="text-white w-6 h-6 cursor-pointer"
+                        onClick={() => setTripToDelete(trip.id)}
+                      />
                     </div>
 
                     <motion.div
+                      key={trip.id}
                       drag="x"
                       dragConstraints={{ left: -150, right: 0 }}
                       dragElastic={0.2}
                       onDragEnd={(_, info) => {
-                        if (info.offset.x < -100) handleDeleteTrip(trip.id);
+                        if (info.offset.x < -100) setTripToDelete(trip.id);
                       }}
-                      className="relative z-10 bg-white dark:bg-gray-800 p-4 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md flex items-center gap-4"
+                      animate={{ x: 0 }}
+                      transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                      className={`relative z-10 p-4 border rounded-lg shadow-md flex items-center gap-4 ${trip.done ? "bg-gray-200 dark:bg-gray-700 opacity-70 line-through" : "bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700"}`}
                     >
                       {trip.image && (
                         <img
@@ -234,6 +243,7 @@ export default function MyTrips({ userId }) {
                           <MapPin className="w-4 h-4 text-cyan-700" />
                           {destinationList.find((d) => d.id === trip.destinationId)?.name || "-"}
                         </p>
+
                         {!sd || !ed ? (
                           <button
                             onClick={() => {
@@ -251,6 +261,20 @@ export default function MyTrips({ userId }) {
                             {`${formatDate(sd)} - ${formatDate(ed)}`}
                           </p>
                         )}
+
+                        {isMarkDoneEnabled(trip) && !trip.done && (
+                          <button
+                            onClick={() => saveTrips(trips.map(t => t.id === trip.id ? { ...t, done: true } : t))}
+                            className="mt-2 px-3 py-1 bg-green-600 text-white rounded text-sm hover:bg-green-700"
+                          >
+                            {t("trip.mark_done")}
+                          </button>
+                        )}
+
+
+                        {trip.done && (
+                          <span className="mt-2 inline-block text-green-700 text-sm font-medium">{t("trip.done")}</span>
+                        )}
                       </div>
                     </motion.div>
                   </div>
@@ -260,7 +284,6 @@ export default function MyTrips({ userId }) {
           </div>
         )}
 
-        {/* Modal Date Picker */}
         {selectedTripId && (
           <div className="fixed inset-0 bg-black/30 flex items-center justify-center z-50 px-4">
             <div className="bg-white dark:bg-gray-800 rounded-lg p-6 w-full max-w-sm shadow-lg">
@@ -304,7 +327,6 @@ export default function MyTrips({ userId }) {
           </div>
         )}
 
-        {/* Form Tambah Trip */}
         {showForm && (
           <div className="fixed inset-0 bg-black/30 dark:bg-black/40 flex justify-end z-50">
             <div className="bg-white dark:bg-gray-800 w-full sm:w-[400px] p-6 py-16 h-full shadow-lg overflow-y-auto">
@@ -377,6 +399,31 @@ export default function MyTrips({ userId }) {
                   className="bg-cyan-700 hover:bg-cyan-800 text-white px-5 py-2 rounded-lg"
                 >
                   {t("trip.form.create")}
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+        {tripToDelete && (
+          <div className="fixed inset-0 bg-black/30 flex items-center justify-center z-50 px-4">
+            <div className="bg-white dark:bg-gray-800 rounded-lg p-6 w-full max-w-sm shadow-lg">
+              <h2 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">{t("trip.confirm_delete_title")}</h2>
+              <p className="text-gray-700 dark:text-gray-300 mb-6">{t("trip.confirm_delete_message")}</p>
+              <div className="flex justify-between">
+                <button
+                  onClick={() => setTripToDelete(null)}
+                  className="text-gray-600 dark:text-gray-300 hover:underline"
+                >
+                  {t("trip.cancel")}
+                </button>
+                <button
+                  onClick={() => {
+                    saveTrips(trips.filter(trip => trip.id !== tripToDelete));
+                    setTripToDelete(null);
+                  }}
+                  className="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg"
+                >
+                  {t("trip.delete")}
                 </button>
               </div>
             </div>

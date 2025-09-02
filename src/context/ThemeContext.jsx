@@ -1,23 +1,18 @@
 import { createContext, useContext, useState, useEffect } from "react";
-import { useAuth } from "../context/AuthContext"; // asumsi ada AuthContext
-
+import { useAuth } from "../context/AuthContext"; 
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const { user } = useAuth(); // ambil user dari auth
+  const { user } = useAuth(); 
   const guestKey = "theme_guest";
 
-  // state tema awal null, agar tidak langsung render
   const [theme, setTheme] = useState(null);
 
-  // inisialisasi tema saat mount dan saat user berubah
   useEffect(() => {
     let key;
     if (user) {
-      // jika user login, pakai tema user
       key = `theme_${user.id}`;
     } else {
-      // jika belum login, pakai tema guest
       key = guestKey;
     }
 
@@ -25,7 +20,6 @@ export const ThemeProvider = ({ children }) => {
     setTheme(savedTheme);
   }, [user]);
 
-  // fungsi toggle theme
   const toggleTheme = () => {
     if (!theme) return;
     const newTheme = theme === "light" ? "dark" : "light";
@@ -35,7 +29,6 @@ export const ThemeProvider = ({ children }) => {
     localStorage.setItem(key, newTheme);
   };
 
-  // jangan render children sebelum theme siap
   if (!theme) return null;
 
   return (

@@ -63,25 +63,23 @@ export default function Header() {
     changeLanguage(language === "en" ? "id" : "en");
   };
 
-const handleSearchSubmit = (e) => {
-  if (e.key === "Enter") {
-    const trimmedQuery = query.trim().toLowerCase();
+  const handleSearchSubmit = (e) => {
+    if (e.key === "Enter") {
+      const trimmedQuery = query.trim().toLowerCase();
 
-    const exactMatch = results.find(
-      (item) => item.name.toLowerCase() === trimmedQuery
-    );
+      const exactMatch = results.find(
+        (item) => item.name.toLowerCase() === trimmedQuery
+      );
 
-    if (exactMatch) {
-      handleClickResult(exactMatch);
-    } else if (results.length === 1) {
-      // Kalau hanya ada 1 hasil, pilih otomatis
-      handleClickResult(results[0]);
-    } else {
-      // Kalau banyak hasil atau tidak ada, jangan pilih apapun
-      console.log("No exact match or multiple results");
+      if (exactMatch) {
+        handleClickResult(exactMatch);
+      } else if (results.length === 1) {
+        handleClickResult(results[0]);
+      } else {
+        console.log("No exact match or multiple results");
+      }
     }
-  }
-};
+  };
 
   // Handle click on search result
   const handleClickResult = (item) => {
@@ -122,13 +120,15 @@ const handleSearchSubmit = (e) => {
   return (
     <header className="w-full fixed top-0 left-0 z-50 bg-gray-200 dark:bg-gray-800 shadow-md transition-colors duration-500">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
-        {/* Logo */}
         <div
           className="flex items-center gap-2 cursor-pointer"
           onClick={() => navigate("/")}
         >
-          <img src="/logo.png" alt="Logo" className="h-10 w-auto" />
-          <span className="text-xl font-bold text-cyan-800 dark:text-gray-200">
+          <img
+            src={theme === "dark" ? "/logo-dark.png" : "/logo.png"}
+            alt="Logo"
+            className="h-11 sm:h-10  w-auto" />
+          <span className="hidden sm:inline text-xl font-bold text-cyan-800 dark:text-gray-200">
             TripMate
           </span>
         </div>
@@ -146,7 +146,7 @@ const handleSearchSubmit = (e) => {
               onKeyDown={handleSearchSubmit}
               onFocus={() => query.trim() && setIsFocused(true)}
               placeholder={t("home.search_placeholder")}
-              className="bg-transparent px-2 w-full focus:outline-none text-sm text-gray-900 dark:text-gray-200  dark:shadow-md"
+              className="bg-transparent px-2 w-full focus:outline-none text-sm text-gray-900 dark:text-gray-200  dark:shadow-md cursor-pointer"
             />
             {isFocused && (
               <motion.ul
@@ -190,7 +190,7 @@ const handleSearchSubmit = (e) => {
           <nav className="flex items-center gap-6 text-sm font-medium text-cyan-800 dark:text-gray-200">
             <button
               onClick={() => handleProtectedRoute("/explore")}
-              className={`pb-1 ${isActive("/explore")
+              className={`cursor-pointer font-bold pb-1 ${isActive("/explore")
                 ? "border-b-2 border-cyan-500 text-cyan-500"
                 : "hover:text-cyan-600 dark:hover:text-cyan-700"
                 }`}
@@ -199,7 +199,7 @@ const handleSearchSubmit = (e) => {
             </button>
             <button
               onClick={() => navigate("/about")}
-              className={`pb-1 ${isActive("/about")
+              className={`cursor-pointer font-bold pb-1 ${isActive("/about")
                 ? "border-b-2 border-cyan-500 text-cyan-500"
                 : "hover:text-cyan-600 dark:hover:text-cyan-700"
                 }`}
@@ -211,13 +211,13 @@ const handleSearchSubmit = (e) => {
           {/* Language & Theme */}
           <button
             onClick={toggleLanguage}
-            className="flex items-center gap-1 text-sm font-semibold text-cyan-700 dark:text-cyan-50 px-2 py-1 rounded-md hover:text-cyan-500 dark:hover:text-cyan-700 transition"
+            className="flex items-center gap-1 text-sm font-semibold text-cyan-700 dark:text-cyan-50 px-2 py-1 rounded-md hover:text-cyan-500 dark:hover:text-cyan-700 transition cursor-pointer"
           >
             <Globe className="h-5 w-5" /> {language.toUpperCase()}
           </button>
           <button
             onClick={toggleTheme}
-            className="flex items-center gap-1 text-sm font-semibold text-cyan-700 dark:text-cyan-50 px-2 py-1 rounded-md hover:text-cyan-500 dark:hover:text-cyan-700 transition"
+            className="flex items-center gap-1 text-sm font-semibold text-cyan-700 dark:text-cyan-50 px-2 py-1 rounded-md hover:text-cyan-500 dark:hover:text-cyan-700 transition cursor-pointer"
           >
             {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
           </button>
@@ -233,7 +233,7 @@ const handleSearchSubmit = (e) => {
           ) : (
             <button
               onClick={() => navigate("/login")}
-              className="bg-cyan-500 text-white px-4 py-1 rounded-full hover:bg-cyan-600 transition"
+              className="bg-cyan-500 text-white px-4 py-1 rounded-full hover:bg-cyan-600 transition cursor-pointer"
             >
               {t("header.login")}
             </button>
@@ -241,7 +241,6 @@ const handleSearchSubmit = (e) => {
 
         </div>
 
-        {/* Mobile / Tablet Menu */}
         <div className="flex lg:hidden items-center gap-3">
           {!searchActive ? (
             <Search
@@ -252,32 +251,46 @@ const handleSearchSubmit = (e) => {
               }}
             />
           ) : (
-            <div className="fixed top-0 left-0 w-full h-14 bg-gray-200 dark:bg-gray-800 flex items-center px-3 z-50 shadow-md">
-              <ArrowLeft
-                className="h-6 w-6 text-gray-700 dark:text-gray-300 cursor-pointer mr-2"
-                onClick={resetSearch}
-              />
-              <motion.input
-                initial={{ width: 0, opacity: 0 }}
-                animate={{ width: "200%", opacity: 1 }}
-                exit={{ width: 0, opacity: 0 }}
-                transition={{ duration: 0.3 }}
-                type="text"
-                className="flex-1 h-10 bg-transparent text-gray-900 dark:text-gray-200 px-2 focus:outline-none"
-                placeholder={t("home.search_placeholder")}
-                value={query}
-                onChange={(e) => handleSearchInput(e.target.value)}
-                onKeyDown={handleSearchSubmit}
-                onFocus={() => query.trim() && setIsFocused(true)}
-                autoFocus
-              />
+            <div className="fixed top-0 left-0 w-full h-14 bg-gray-100 dark:bg-gray-900 flex items-center px-3 z-50 shadow-lg">
+              {/* Tombol Back */}
+              <motion.div
+                initial={{ x: -30, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.4 }}
+                className="flex items-center justify-center"
+              >
+                <ArrowLeft
+                  className="h-6 w-6 text-gray-600 dark:text-gray-300 cursor-pointer hover:scale-110 transition-transform duration-200"
+                  onClick={resetSearch}
+                />
+              </motion.div>
+
+              {/* Input Search */}
+              <motion.div
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.4, delay: 0.1 }}
+                className="flex-1 mx-3"
+              >
+                <motion.input
+                  type="text"
+                  placeholder={t("home.search_placeholder")}
+                  value={query}
+                  onChange={(e) => handleSearchInput(e.target.value)}
+                  onKeyDown={handleSearchSubmit}
+                  onFocus={() => query.trim() && setIsFocused(true)}
+                  autoFocus
+                  className="w-full h-11 px-4 rounded-4xl border border-gray-300 dark:border-gray-700bg-white dark:bg-gray-800text-gray-900 dark:text-gray-100 shadow-sm focus:shadow-md placeholder-gray-400 dark:placeholder-gray-500focus:outline-none focus:ring-2 focus:ring-blue-400 dark:focus:ring-blue-500transition-all duration-300"
+                />
+              </motion.div>
 
               {isFocused && query.trim() && (
                 <motion.ul
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
-                  className="absolute left-0 top-full mt-2 w-full bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 z-50 max-h-64 overflow-y-auto"
+                  transition={{ duration: 0.3, ease: "easeOut" }}
+                  className="absolute left-0 top-full mt-2 w-full bg-white/90 dark:bg-gray-800/90 backdrop-blur-mdrounded-2xl shadow-xl border border-gray-300 dark:border-gray-700 z-50 max-h-64 overflow-y-auto"
                 >
                   {results.length > 0 ? (
                     results.map((item) => (
@@ -317,23 +330,20 @@ const handleSearchSubmit = (e) => {
         </div>
       </div>
 
-      {/* Mobile Menu Drawer */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            initial={{ x: "200%" }} // Mulai dari kanan
+            initial={{ x: "200%" }} 
             animate={{ x: 0 }}
-            exit={{ x: "200%" }}    // Keluar ke kanan
+            exit={{ x: "200%" }}    
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="fixed inset-0 z-50 flex justify-end" // Flex untuk memposisikan drawer di kanan
+            className="fixed inset-0 z-50 flex justify-end" 
           >
-            {/* Overlay background */}
             <div
               className="absolute inset-0 bg-black/30 backdrop-blur-sm"
               onClick={() => setMenuOpen(false)}
             ></div>
 
-            {/* Sidebar menu */}
             <div className="relative z-50 bg-white dark:bg-gray-900 w-72 sm:w-80 h-full shadow-2xl flex flex-col p-6">
               {/* Close button */}
               <div className="flex justify-end">
@@ -343,7 +353,6 @@ const handleSearchSubmit = (e) => {
                 />
               </div>
 
-              {/* Menu items */}
               <nav className="flex flex-col mt-6 gap-4 text-gray-800 dark:text-gray-200 font-medium text-base">
                 <button
                   onClick={() => {
@@ -383,7 +392,6 @@ const handleSearchSubmit = (e) => {
                 >
                   {t("header.about")}
                 </button>
-                {/* Profile / Login */}
                 {isLoggedIn ? (
                   <button
                     onClick={() => {

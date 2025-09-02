@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-/* bikin varian dark manual */
 @custom-variant dark (&:where(.dark, .dark *));
 
 @layer base {
@@ -8,9 +7,5 @@
     @apply font-sans;
     font-family: 'Poppins', sans-serif;
   }
-
 };
 
-html {
-  @apply transition-colors duration-300;
-};

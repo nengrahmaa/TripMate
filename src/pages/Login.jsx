@@ -20,7 +20,7 @@ export default function Login({ isModal = true, onClose }) {
     );
 
     if (user) {
-      login(user); // Update global state
+      login(user); 
       alert(t("login.success"));
       if (isModal && onClose) onClose();
       navigate("/");

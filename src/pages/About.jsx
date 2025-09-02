@@ -23,19 +23,17 @@ export default function About() {
   const yImage = useTransform(scrollY, [0, 500], [0, -50]);
 
   return (
-    <div className="bg-gray-200 dark:bg-gray-900 transition-colors duration-500">
+    <div className="bg-gray-100 dark:bg-gray-900 transition-colors duration-500">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-20 space-y-6 sm:space-y-10">
-        {/* Title */}
         <ScrollReveal>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center text-cyan-900 dark:text-cyan-600 bg-clip-text transition-colors duration-500">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center text-cyan-900 dark:text-cyan-700 bg-clip-text transition-colors duration-500">
             {about?.title?.[lang]}
           </h1>
         </ScrollReveal>
 
-        {/* Image with Parallax */}
         {about?.image && (
           <motion.div
-            className="w-full h-48 sm:h-64 md:h-80 lg:h-96 overflow-hidden rounded-2xl shadow-xl motion-safe:transform-gpu relative transition-colors duration-500"
+            className="w-full h-56 sm:h-67 md:h-85 lg:h-96 overflow-hidden rounded-2xl shadow-xl motion-safe:transform-gpu relative transition-colors duration-500"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1, y: yImage }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -52,16 +50,14 @@ export default function About() {
           </motion.div>
         )}
 
-        {/* Description */}
         <ScrollReveal delay={0.2}>
-          <p className="text-xs sm:text-sm md:text-base leading-relaxed text-gray-700 dark:text-gray-300 text-justify transition-colors duration-500">
+          <p className="px-3 text-sm sm:text-base md:text-base leading-relaxed text-gray-700 dark:text-gray-300 transition-colors duration-500 text-center">
             {about?.description?.[lang]}
           </p>
         </ScrollReveal>
 
-        {/* Services */}
         <ScrollReveal>
-          <h2 className="text-md sm:text-xl md:text-xl font-bold mb-6 sm:mb-8 text-center text-cyan-700 dark:text-cyan-500 transition-colors duration-500">
+          <h2 className="text-md sm:text-2xl md:text-2xl font-bold mb-6 sm:mb-8 text-center text-cyan-700 dark:text-cyan-600 transition-colors duration-500">
             {about?.services_title?.[lang]}
           </h2>
         </ScrollReveal>
@@ -71,7 +67,7 @@ export default function About() {
               <ScrollReveal key={idx} delay={idx * 0.15}>
                 <motion.div
                   className="flex items-center gap-3 sm:gap-4 p-3 sm:p-5 border rounded-2xl shadow-lg 
-                             bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700 cursor-pointer
+                             bg-gray-50 dark:bg-gray-900 border-gray-200 dark:border-gray-700 cursor-pointer
                              transition-colors duration-500"
                   whileHover={{ scale: 1.05, y: -5, rotate: 2 }}
                   whileTap={{ scale: 0.95, y: 0, rotate: 0 }}
@@ -85,9 +81,8 @@ export default function About() {
             ))}
         </div>
 
-        {/* FAQ */}
         <ScrollReveal>
-          <h2 className="text-xl sm:text-2xl md:text-2xl font-bold mb-4 sm:mb-6 text-center text-cyan-700 dark:text-cyan-500 transition-colors duration-500">
+          <h2 className="text-xl sm:text-2xl md:text-2xl font-bold mb-4 sm:mb-6 text-center text-cyan-700 dark:text-gray-200 transition-colors duration-500">
             {about?.faq_title?.[lang]}
           </h2>
         </ScrollReveal>

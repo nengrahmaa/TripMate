@@ -13,30 +13,25 @@ export default function Explore() {
   const location = useLocation();
   const [searchParams, setSearchParams] = useSearchParams();
 
-  const allLabel = t("explore.all"); // Ambil label "All" dari i18n
+  const allLabel = t("explore.all"); 
 
-  // Ambil semua destinasi dari data.json
   const destinations = data.flatMap(city =>
     city.places.map(place => ({ ...place, city: city.city }))
   );
 
   const [activeCity, setActiveCity] = useState(searchParams.get("city") || allLabel);
 
-  // Pagination
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
 
-  // Semua kota unik
   const cities = [allLabel, ...new Set(destinations.map(item => item.city))];
 
-  // Sorting (opsional)
   const [activeSort, setActiveSort] = useState("rating");
   const sortOptions = [
     { label: t("explore.rating", "Rating"), value: "rating" },
     { label: t("explore.name", "Name"), value: "name" },
   ];
 
-  // Handle filter kota
   const handleCityChange = (city) => {
     setActiveCity(city);
     setCurrentPage(1);
@@ -44,34 +39,28 @@ export default function Explore() {
     else setSearchParams({ city });
   };
 
-  // Handle sort
   const handleSortChange = (value) => {
     setActiveSort(value);
   };
 
-  // Filter destinasi
   let filteredDestinations =
     activeCity === allLabel
       ? destinations
       : destinations.filter(item => item.city === activeCity);
 
-  // Apply sorting
   filteredDestinations = filteredDestinations.sort((a, b) => {
     if (activeSort === "rating") return b.rating - a.rating;
     if (activeSort === "name") return a.name[i18n.language].localeCompare(b.name[i18n.language]);
     return 0;
   });
 
-  // Pagination
   const totalPages = Math.ceil(filteredDestinations.length / itemsPerPage);
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = filteredDestinations.slice(indexOfFirstItem, indexOfLastItem);
 
-  // Reset halaman saat filter berubah
   useEffect(() => setCurrentPage(1), [activeCity]);
 
-  // Sinkronisasi filter dari URL saat back/forward
   useEffect(() => {
     const cityFromURL = searchParams.get("city") || allLabel;
     setActiveCity(cityFromURL);
@@ -90,7 +79,6 @@ export default function Explore() {
           onSortChange={handleSortChange}
         />
 
-        {/* Grid destinasi */}
         <div className="grid gap-5 sm:grid-cols-3 lg:grid-cols-4">
           <AnimatePresence mode="wait">
             {currentItems.length > 0 ? (
@@ -104,14 +92,12 @@ export default function Explore() {
                   transition={{ duration: 0.55, ease: "easeInOut" }}
                   className="relative rounded-2xl overflow-hidden shadow-md group cursor-pointer"
                 >
-                  {/* Gambar */}
                   <img
                     src={place.image}
                     alt={place.name[i18n.language]}
                     className="w-full h-[50vh] sm:h-[40vh] lg:h-[60vh] object-cover transition-transform duration-300 group-hover:scale-105"
                   />
 
-                  {/* Overlay bawah untuk info */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-4 flex flex-col justify-end">
                     <div className="transition-opacity duration-300 group-hover:opacity-0">
                       <h3 className="text-white font-bold text-lg">{place.name[i18n.language]}</h3>
@@ -139,7 +125,7 @@ export default function Explore() {
             )}
           </AnimatePresence>
         </div>
-        {/* Pagination */}
+
         {totalPages > 1 && (
           <div className="mt-8 flex justify-center">
             <Pagination

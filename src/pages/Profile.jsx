@@ -41,7 +41,6 @@ export default function Profile() {
 
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 font-serif pb-8">
-      {/* Cover */}
       <div className="relative w-full h-47 sm:h-55 md:h-60 lg:h-72 overflow-hidden shadow-md border border-gray-300 dark:border-gray-700">
         <img
           src="https://wallpaperaccess.com/full/4632386.jpg"
@@ -50,17 +49,15 @@ export default function Profile() {
         />
       </div>
 
-      {/* Profile Card */}
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6 }}
         className="relative max-w-4xl mx-auto px-3 sm:px-4 md:px-6 -mt-16 sm:-mt-24 md:-mt-28 lg:-mt-32 z-10"
       >
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl flex flex-col md:flex-row overflow-hidden border border-gray-300 dark:border-gray-700">
+        <div className="bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-xl flex flex-col md:flex-row overflow-hidden border border-gray-300 dark:border-gray-700">
           {/* Sidebar */}
-          <div className="w-full md:w-1/3 bg-gray-50 dark:bg-gray-700 p-4 sm:p-6 pt-16 sm:pt-20 flex flex-col items-center border-b md:border-b-0 md:border-r border-gray-300 dark:border-gray-600">
-            {/* Avatar */}
+          <div className="w-full md:w-1/3 bg-gray-300 dark:bg-gray-700 p-4 sm:p-6 pt-16 sm:pt-20 flex flex-col items-center border-b md:border-b-0 md:border-r border-gray-300 dark:border-gray-600">
             <div className="relative w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full border-4 border-gray-200 dark:border-gray-600 shadow-lg overflow-hidden -mt-12 sm:-mt-16 bg-white">
               <img
                 src="https://i.pinimg.com/736x/ee/c5/cf/eec5cf10cb80af4e4b1c6674445be559.jpg"
@@ -77,15 +74,10 @@ export default function Profile() {
               </motion.button>
             </div>
 
-            {/* Username */}
             <h2 className="mt-3 sm:mt-4 text-base sm:text-lg md:text-xl font-bold text-gray-800 dark:text-gray-100 uppercase tracking-wide text-center">
-              {user.username || "User"}
+              {user.username}
             </h2>
-            <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-300 italic text-center break-all">
-              {user.email}
-            </p>
-
-            {/* Navigation */}
+            
             <div className="mt-4 sm:mt-6 w-full flex flex-col gap-2">
               {[
                 { icon: Heart, label: t("profile.wishlist"), count: counts.wishlist, path: "/favorites" },
@@ -106,7 +98,6 @@ export default function Profile() {
               ))}
             </div>
 
-            {/* Logout */}
             <div className="w-full mt-4 sm:mt-6">
               <motion.button
                 whileHover={{ scale: 1.03 }}
@@ -120,13 +111,11 @@ export default function Profile() {
             </div>
           </div>
 
-          {/* Right Content */}
           <div className="flex-1 p-4 sm:p-6 md:p-8">
             <h2 className="text-base sm:text-lg md:text-2xl font-bold mb-4 sm:mb-6 text-gray-800 dark:text-gray-100 border-b border-gray-300 dark:border-gray-600 pb-2 uppercase tracking-wide">
               {t("profile.title")}
             </h2>
 
-            {/* Statistics */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
               {[
                 { icon: Heart, label: t("profile.wishlist"), count: counts.wishlist },

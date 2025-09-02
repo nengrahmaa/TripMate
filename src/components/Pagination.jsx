@@ -9,7 +9,6 @@ export default function Pagination({
 }) {
   const { t } = useTranslation();
 
-  // Fungsi untuk generate halaman dengan ellipsis
   const getPageNumbers = () => {
     let pages = [];
 
@@ -44,7 +43,6 @@ export default function Pagination({
 
   return (
     <div className="flex items-center pt-15 gap-3">
-      {/* Tombol Sebelumnya */}
       <button
         onClick={handlePreviousPage}
         disabled={currentPage === 1}
@@ -80,7 +78,7 @@ export default function Pagination({
                   }
                 }
               }}
-              className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
+              className={`cursor-pointer px-3 py-1 rounded-md text-sm font-medium transition-colors ${
                 page === currentPage
                   ? "bg-cyan-800 text-white dark:bg-cyan-600"
                   : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800"

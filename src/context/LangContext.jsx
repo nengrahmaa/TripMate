@@ -6,25 +6,33 @@ const LangContext = createContext();
 export const LangProvider = ({ children }) => {
   const { i18n } = useTranslation();
 
+  const normalizeLang = (lang) => {
+    if (!lang) return "en";
+    const lower = lang.toLowerCase();
+    if (lower.includes("id")) return "id";
+    if (lower.includes("en")) return "en";
+    return "en"; 
+  };
+
   const [language, setLanguage] = useState(() => {
     const user = JSON.parse(localStorage.getItem("user"));
-    if (user) {
-      return localStorage.getItem(`lang_${user.id}`) || i18n.language || "en";
-    }
-    return i18n.language || "en";
+    const savedLang = user
+      ? localStorage.getItem(`lang_${user.id}`)
+      : null;
+    return normalizeLang(savedLang || i18n.language || "en");
   });
 
-  // Sync ke i18n dan localStorage saat language berubah
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("user"));
-    i18n.changeLanguage(language);
+    const normalized = normalizeLang(language);
+    i18n.changeLanguage(normalized);
     if (user) {
-      localStorage.setItem(`lang_${user.id}`, language);
+      localStorage.setItem(`lang_${user.id}`, normalized);
     }
   }, [language, i18n]);
 
   const changeLanguage = (lang) => {
-    setLanguage(lang);
+    setLanguage(normalizeLang(lang));
   };
 
   return (

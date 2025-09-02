@@ -61,7 +61,6 @@ export default function Detail() {
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 transition-colors duration-500">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-20">
 
-        {/* Back Button */}
         <div className="flex items-center justify-start mb-8 gap-6">
           <motion.button
             whileHover={{ scale: 1.05 }}
@@ -76,7 +75,6 @@ export default function Detail() {
           </h1>
         </div>
 
-        {/* Hero Section */}
         <motion.div
           initial={{ opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -99,7 +97,6 @@ export default function Detail() {
           </div>
         </motion.div>
 
-        {/* Favorite Button */}
         <div className="flex flex-col items-center mt-8 relative">
           <AnimatePresence>
             {showNotif && (
@@ -108,7 +105,7 @@ export default function Detail() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.3 }}
-                className="absolute -top-10 bg-black/80 text-white text-xs sm:text-sm px-3 sm:px-4 py-1 sm:py-2 rounded-full shadow-lg"
+                className="absolute -top-10 bg-black/70 text-gray-200 dark:bg-gray-200 dark:text-gray-900 text-xs sm:text-sm px-3 sm:px-4 py-1 sm:py-2 rounded-full shadow-lg"
               >
                 {showNotif === "added"
                   ? t("detail.added_to_favorites")
@@ -121,7 +118,7 @@ export default function Detail() {
             whileTap={{ scale: 0.9 }}
             whileHover={{ scale: 1.05 }}
             onClick={handleClick}
-            className={`flex items-center gap-2 px-6 sm:px-8 py-2 sm:py-3 rounded-full font-semibold shadow-lg transition-all
+            className={`flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-full font-semibold shadow-lg transition-all
               ${isFavorite
                 ? "bg-gradient-to-r from-red-500 to-pink-600 text-white hover:opacity-90"
                 : "bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600"
@@ -132,24 +129,21 @@ export default function Detail() {
           </motion.button>
         </div>
 
-        {/* Description */}
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="mt-8 sm:mt-10 text-xs sm:text-sm md:text-base text-gray-700 dark:text-gray-300 leading-relaxed text-center max-w-2xl sm:max-w-3xl mx-auto px-3"
+          className="mt-8 sm:mt-10 text-sm sm:text-base md:text-base text-gray-700 dark:text-gray-300 leading-relaxed text-center max-w-2xl sm:max-w-3xl mx-auto px-3"
         >
           {place.description[i18n.language]}
         </motion.p>
 
-        {/* Nearby Recommendations */}
-        <h2 className="mt-12 sm:mt-16 text-xl sm:text-2xl font-bold text-gray-900 dark:text-gray-100 text-center">
+        <h2 className="mt-12 sm:mt-16 text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 text-center">
           {t("detail.nearby_recommendations")}
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 mt-8 sm:mt-10">
-          {/* Hotels */}
           <div>
             <h3 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4 sm:mb-6 text-center">
               {t("detail.hotel")}
@@ -184,7 +178,6 @@ export default function Detail() {
             </div>
           </div>
 
-          {/* Restaurants */}
           <div>
             <h3 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4 sm:mb-6 text-center">
               {t("detail.restaurant")}
@@ -219,15 +212,14 @@ export default function Detail() {
             </div>
           </div>
 
-          {/* Reviews */}
           <div className="mt-8 lg:mt-16 lg:col-span-2">
-            <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-gray-900 dark:text-gray-100 text-center">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-gray-900 dark:text-gray-200 text-center">
               {t("reviews.visitor_reviews")}
             </h2>
             <div className="flex justify-center mb-4 sm:mb-6">
               <button
                 onClick={() => navigate(`/reviews/${id}`)}
-                className="bg-cyan-600 hover:bg-cyan-700 text-white px-4 sm:px-6 py-1.5 sm:py-2 rounded-full shadow-md transition text-xs sm:text-sm"
+                className="bg-cyan-600 hover:bg-cyan-700 text-white px-4 sm:px-6 py-1.5 sm:py-2 rounded-full shadow-md transition text-sm sm:text-sm cursor-pointer"
               >
                 {t("reviews.add_review")}
               </button>

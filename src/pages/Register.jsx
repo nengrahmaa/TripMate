@@ -101,14 +101,12 @@ export default function Register({ isModal = true, onClose }) {
           <p className="text-lg">{t("register.prompt_message")}</p>
         </div>
 
-        {/* Bagian kanan */}
         <div className="flex flex-col justify-center items-center w-full md:w-1/2 bg-white dark:bg-gray-900 p-8 transition-colors duration-500">
           <h1 className="text-2xl font-bold text-gray-800 dark:text-white mb-6">
             {t("register.title")}
           </h1>
 
           <form onSubmit={handleRegister} className="w-full space-y-4">
-            {/* Username */}
             <div className="relative">
               <User className="absolute left-3 top-3 text-gray-500 dark:text-gray-300" size={20} />
               <input
@@ -129,7 +127,6 @@ export default function Register({ isModal = true, onClose }) {
               )}
             </div>
 
-            {/* Password */}
             <div className="relative">
               <Lock className="absolute left-3 top-3 text-gray-500 dark:text-gray-300" size={20} />
               <input
@@ -150,7 +147,6 @@ export default function Register({ isModal = true, onClose }) {
               )}
             </div>
 
-            {/* Confirm Password */}
             <div className="relative">
               <Lock className="absolute left-3 top-3 text-gray-500 dark:text-gray-300" size={20} />
               <input

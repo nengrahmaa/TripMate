@@ -23,8 +23,6 @@ export default function DetailKota() {
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 transition-colors duration-500">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24 lg:py-26 space-y-12">
-
-        {/* Back Button */}
         <div className="flex items-center justify-start mb-8 gap-6">
           <motion.button
             whileHover={{ scale: 1.05 }}
@@ -40,7 +38,6 @@ export default function DetailKota() {
           </h1>
         </div>
 
-        {/* Hero Slider */}
         <div className="relative w-full h-64 sm:h-80 md:h-[70vh] lg:h-[80vh] rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg mb-10">
           {city.places.map((place, idx) => (
             <motion.div
@@ -67,7 +64,6 @@ export default function DetailKota() {
             </motion.div>
           ))}
 
-          {/* Dots Navigation */}
           <div className="absolute bottom-4 w-full flex justify-center gap-2 sm:gap-3">
             {city.places.map((_, idx) => (
               <button
@@ -80,18 +76,16 @@ export default function DetailKota() {
           </div>
         </div>
 
-        {/* Description Kota */}
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="text-xs sm:text-sm md:text-base text-gray-700 dark:text-gray-300 leading-relaxed text-center max-w-4xl mx-auto px-2"
+          className="text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-center max-w-4xl mx-auto px-2"
         >
           {city.description[i18n.language]}
         </motion.p>
 
-        {/* Daftar Destinasi */}
         <h2 className="mt-16 text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 text-center">
           {t("explore.destinations_in", { city: city.city })}
         </h2>
@@ -106,14 +100,12 @@ export default function DetailKota() {
                   navigate(`/detail/${city.city}-${place.name.en}?city=${city.city}`)
                 }
               >
-                {/* Gambar */}
                 <img
                   src={place.image}
                   alt={place.name[i18n.language]}
                   className="w-full h-48 sm:h-56 md:h-64 lg:h-72 object-cover transition-transform duration-300 group-hover:scale-105"
                 />
 
-                {/* Overlay bawah untuk info */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-3 sm:p-4 flex flex-col justify-end">
                   <div className="transition-opacity duration-300 group-hover:opacity-0">
                     <h3 className="text-white font-bold text-sm sm:text-base md:text-lg">

@@ -52,7 +52,12 @@
     "hero_title": "Mulai Petualanganmu di Indonesia!",
     "hero_subtitle": "Rencanakan perjalanan dengan mudah, temukan tempat-tempat tersembunyi, dan ciptakan kenangan tak terlupakan.",
     "search_placeholder": "Cari berdasarkan kota atau tempat",
-    "top_rated": "Destinasi Paling Populer"
+    "top_rated": "Destinasi Paling Populer",
+    "about_title": "Kami membantu Anda menemukan dan merencanakan liburan impian Anda",
+    "about_desc": "Kami adalah teman perjalanan Anda yang berbasis di...",
+    "cities": "Kota",
+    "destinations": "Destinasi",
+    "explore": "Jelajahi"
   },
   "explore": {
     "title": "Jelajahi Indonesia",
@@ -120,7 +125,12 @@
       "destination_placeholder": "Ke mana?",
       "cancel": "Batal",
       "create": "Buat trip"
-    }
+    },
+    "mark_done": "Tandai Selesai",
+    "done": "Selesai",
+    "confirm_delete_title": "Konfirmasi Hapus",
+    "confirm_delete_message": "Apakah Anda yakin ingin menghapus ini?",
+    "delete": "Hapus"
   },
   "detail": {
     "back": "Kembali",
@@ -166,7 +176,11 @@
     "complete_all_fields": "Lengkapi semua data, termasuk foto.",
     "submit_button": "Kirim Ulasan",
     "update_button": "Update Ulasan",
-    "cancel_button": "Batal"
+    "cancel_button": "Batal",
+    "title_too_short": "Judul minimal {{min}} karakter",
+    "text_too_short": "Teks minimal {{min}} karakter",
+    "title_feedback": "{{length}} / {{min}} karakter",
+    "text_feedback": "{{length}} / {{min}} karakter"
   },
   "favorites": {
     "title": "Tempat Favorit",

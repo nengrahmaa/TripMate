@@ -70,7 +70,7 @@ export default function Reviews() {
             onClick={() => navigate(-1)}
             className="flex items-center gap-1 px-2.5 py-1.5 text-cyan-700 bg-gray-100 dark:bg-gray-700 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-600 rounded-full text-sm font-medium transition-colors"
           >
-            <ArrowLeft className="w-5 h-5 sm:w-6 sm:h-6 text-cyan-700" />
+            <ArrowLeft className="w-5 h-5 sm:w-6 sm:h-6 text-cyan-700 dark:text-gray-200" />
           </motion.button>
 
           <h1 className="text-2xl md:text-3xl font-bold dark:text-white truncate">
@@ -78,7 +78,6 @@ export default function Reviews() {
           </h1>
         </div>
 
-        {/* Jika tidak ada ulasan */}
         {userReviews.length === 0 ? (
           <motion.p
             initial={{ opacity: 0 }}
@@ -100,7 +99,7 @@ export default function Reviews() {
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3 }}
-                className="relative p-4 sm:p-5 border rounded-xl bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition 
+                className="relative p-4 sm:p-5 border rounded-xl bg-gray-100 dark:bg-gray-800 shadow-md hover:shadow-lg transition 
                  max-w-sm w-full mx-auto"
               >
                 <div className="flex items-center justify-between mb-2">
@@ -116,7 +115,6 @@ export default function Reviews() {
                   {review.text}
                 </p>
 
-                {/* Gambar review */}
                 {review.photo && (
                   <motion.img
                     initial={{ opacity: 0 }}
@@ -132,13 +130,12 @@ export default function Reviews() {
                     {t("reviews.place_id")}: {review.placeId}
                   </p>
 
-                  {/* Dropdown menu */}
                   <div className="relative">
                     <button
                       onClick={() => setOpenMenu(openMenu === index ? null : index)}
                       className="p-1.5 sm:p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition"
                     >
-                      <MoreVertical className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600 dark:text-gray-300" />
+                      <MoreVertical className="cursor-pointer w-4 h-4 sm:w-5 sm:h-5 text-gray-600 dark:text-gray-300" />
                     </button>
 
                     <AnimatePresence>
