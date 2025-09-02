@@ -252,7 +252,6 @@ export default function Header() {
             />
           ) : (
             <div className="fixed top-0 left-0 w-full h-14 bg-gray-100 dark:bg-gray-900 flex items-center px-3 z-50 shadow-lg">
-              {/* Tombol Back */}
               <motion.div
                 initial={{ x: -30, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
@@ -265,7 +264,6 @@ export default function Header() {
                 />
               </motion.div>
 
-              {/* Input Search */}
               <motion.div
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
@@ -280,7 +278,7 @@ export default function Header() {
                   onKeyDown={handleSearchSubmit}
                   onFocus={() => query.trim() && setIsFocused(true)}
                   autoFocus
-                  className="w-full h-11 px-4 rounded-4xl border border-gray-300 dark:border-gray-700bg-white dark:bg-gray-800text-gray-900 dark:text-gray-100 shadow-sm focus:shadow-md placeholder-gray-400 dark:placeholder-gray-500focus:outline-none focus:ring-2 focus:ring-blue-400 dark:focus:ring-blue-500transition-all duration-300"
+                  className="w-full h-7 px-3 rounded-4xl border border-gray-300 dark:border-cyan-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-sm focus:shadow-md placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:focus:ring-blue-500 transition-all duration-300"
                 />
               </motion.div>
 
