@@ -146,7 +146,7 @@ export default function Header() {
               onKeyDown={handleSearchSubmit}
               onFocus={() => query.trim() && setIsFocused(true)}
               placeholder={t("home.search_placeholder")}
-              className="bg-transparent px-2 w-full focus:outline-none text-sm text-gray-900 dark:text-gray-200  dark:shadow-md cursor-pointer"
+              className="bg-transparent px-2 w-full focus:outline-none text-sm text-gray-900 dark:text-gray-200   cursor-pointer"
             />
             {isFocused && (
               <motion.ul
