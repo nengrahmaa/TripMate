@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import data from "../data/data.json";
+import data from "../json/data/data.json";
 import StarRating from "../components/StarRating";
 
 export default function DetailKota() {

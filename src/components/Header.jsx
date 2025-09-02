@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useAuth } from "../context/AuthContext";
 import { useTheme } from "../context/ThemeContext";
 import { useLang } from "../context/LangContext";
-import data from "../data/data.json";
+import data from "../json/data/data.json";
 
 export default function Header() {
   const { t, i18n } = useTranslation();
@@ -57,17 +57,31 @@ export default function Header() {
     return [cityEntry, ...placesEntries];
   });
 
+
   // Toggle language
   const toggleLanguage = () => {
     changeLanguage(language === "en" ? "id" : "en");
   };
 
-  // Handle Enter key search
-  const handleSearchSubmit = (e) => {
-    if (e.key === "Enter" && results.length > 0) {
+const handleSearchSubmit = (e) => {
+  if (e.key === "Enter") {
+    const trimmedQuery = query.trim().toLowerCase();
+
+    const exactMatch = results.find(
+      (item) => item.name.toLowerCase() === trimmedQuery
+    );
+
+    if (exactMatch) {
+      handleClickResult(exactMatch);
+    } else if (results.length === 1) {
+      // Kalau hanya ada 1 hasil, pilih otomatis
       handleClickResult(results[0]);
+    } else {
+      // Kalau banyak hasil atau tidak ada, jangan pilih apapun
+      console.log("No exact match or multiple results");
     }
-  };
+  }
+};
 
   // Handle click on search result
   const handleClickResult = (item) => {
@@ -122,7 +136,7 @@ export default function Header() {
         <div className="hidden lg:flex items-center gap-6">
           <div
             ref={searchRef}
-            className="relative flex items-center bg-gray-200 dark:bg-gray-500 rounded-full px-3 py-1 w-72 shadow-md-"
+            className="relative flex items-center bg-gray-200 dark:bg-gray-500 rounded-full px-3 py-1 w-72 shadow-md"
           >
             <Search className="h-4 w-4 text-gray-500 dark:text-gray-200" />
             <input
@@ -132,21 +146,21 @@ export default function Header() {
               onKeyDown={handleSearchSubmit}
               onFocus={() => query.trim() && setIsFocused(true)}
               placeholder={t("home.search_placeholder")}
-              className="bg-transparent px-2 w-full focus:outline-none text-sm text-gray-900 dark:text-gray-200 dark:shadow-md"
+              className="bg-transparent px-2 w-full focus:outline-none text-sm text-gray-900 dark:text-gray-200  dark:shadow-md"
             />
             {isFocused && (
               <motion.ul
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
-                className="absolute left-0 top-full mt-2 w-full bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 z-50 max-h-64 overflow-y-auto"
+                className="absolute left-0 top-full mt-2 w-full bg-gray-50 dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 z-50 max-h-64 overflow-y-auto"
               >
                 {results.length > 0 ? (
                   results.map((item) => (
                     <li
                       key={item.id}
                       tabIndex={0}
-                      className="flex items-center gap-3 p-3 hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer transition"
+                      className="flex items-center gap-3 p-3 bg-dark-100 hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer transition"
                       onClick={() => handleClickResult(item)}
                       onKeyDown={(e) => e.key === "Enter" && handleClickResult(item)}
                     >

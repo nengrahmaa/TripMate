@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
-import iconicData from "../translations/iconic.json";
+import iconicData from "../json/iconic.json";
 import Recommendation from "../components/Recommendation";
 
 export default function Home() {

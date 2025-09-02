@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, Heart, MapPin } from "lucide-react";
-import data from "../data/data.json";
+import data from "../json/data/data.json";
 import StarRating from "../components/StarRating";
 
 export default function Detail() {

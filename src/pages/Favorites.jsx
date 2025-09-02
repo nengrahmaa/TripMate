@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Heart, ArrowLeft } from "lucide-react";
-import placesData from "../data/data.json";
+import placesData from "../json/data/data.json";
 import StarRating from "../components/StarRating";
 import { motion } from "framer-motion";
 

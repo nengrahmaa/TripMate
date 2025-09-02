@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import data from "../data/data.json";
+import data from "../json/data/data.json";
 import { motion } from "framer-motion";
 import { ArrowLeft, MapPin, CalendarPlus, Trash2, Plane, PlusCircle } from "lucide-react";
 
@@ -179,7 +179,7 @@ export default function MyTrips({ userId }) {
               onClick={() => setShowForm(true)}
               className="border dark:border-gray-600 rounded-lg w-full py-6 text-lg font-medium text-cyan-900 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 transition"
             >
-              <PlusCircle className="inline-block w-5 h-5 mr-2" />
+              <PlusCircle className="inline-block w-5 h-5 mr-2 dark:text-gray-200" />
               {t("trip.new_trip")}
             </button>
             <div className="mt-10">

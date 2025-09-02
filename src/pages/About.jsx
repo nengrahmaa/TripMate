@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import aboutData from "../translations/about.json";
+import aboutData from "../json/about.json";
 import { MapPin, Heart, Edit3, Moon, UserCheck } from "lucide-react";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 import ScrollReveal from "../components/ScrollReveal";
@@ -23,7 +23,7 @@ export default function About() {
   const yImage = useTransform(scrollY, [0, 500], [0, -50]);
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-900 transition-colors duration-500">
+    <div className="bg-gray-200 dark:bg-gray-900 transition-colors duration-500">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-20 space-y-6 sm:space-y-10">
         {/* Title */}
         <ScrollReveal>

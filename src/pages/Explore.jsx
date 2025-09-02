@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate, useLocation, useSearchParams } from "react-router-dom";
-import data from "../data/data.json";
+import data from "../json/data/data.json";
 import StarRating from "../components/StarRating";
 import Pagination from "../components/Pagination";
 import FilterBar from "../components/FilterBar";
