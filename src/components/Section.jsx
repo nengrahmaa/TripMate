@@ -1,9 +1,12 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom"; 
+
 
 export default function Section() {
   const { t } = useTranslation();
+   const navigate = useNavigate();
 
   return (
     <section className="bg-gray-100 dark:bg-gray-900 py-16 px-6">
@@ -51,15 +54,15 @@ export default function Section() {
             </motion.div>
           </div>
 
-          <motion.a
-            href="/explore"
+          <motion.button
+            onClick={() => navigate("/explore")}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-white bg-gradient-to-r from-cyan-800 to-cyan-900 font-semibold shadow-md hover:shadow-lg transition duration-300"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             {t("home.explore")}
             <ArrowRight size={18} />
-          </motion.a>
+          </motion.button>
         </div>
 
         <motion.div

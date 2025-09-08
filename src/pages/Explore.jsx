@@ -13,7 +13,7 @@ export default function Explore() {
   const location = useLocation();
   const [searchParams, setSearchParams] = useSearchParams();
 
-  const allLabel = t("explore.all"); 
+  const allLabel = t("explore.all");
 
   const destinations = data.flatMap(city =>
     city.places.map(place => ({ ...place, city: city.city }))
@@ -131,8 +131,13 @@ export default function Explore() {
             <Pagination
               currentPage={currentPage}
               totalPages={totalPages}
-              handleNextPage={() => currentPage < totalPages && setCurrentPage(currentPage + 1)}
-              handlePreviousPage={() => currentPage > 1 && setCurrentPage(currentPage - 1)}
+              handleNextPage={() =>
+                currentPage < totalPages && setCurrentPage(currentPage + 1)
+              }
+              handlePreviousPage={() =>
+                currentPage > 1 && setCurrentPage(currentPage - 1)
+              }
+              onPageChange={(page) => setCurrentPage(page)} 
             />
           </div>
         )}

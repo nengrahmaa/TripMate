@@ -6,6 +6,7 @@ export default function Pagination({
   totalPages,
   handleNextPage,
   handlePreviousPage,
+  onPageChange,
 }) {
   const { t } = useTranslation();
 
@@ -46,11 +47,10 @@ export default function Pagination({
       <button
         onClick={handlePreviousPage}
         disabled={currentPage === 1}
-        className={`p-2 rounded-md border text-sm transition-colors ${
-          currentPage === 1
+        className={`p-2 rounded-md border text-sm transition-colors ${currentPage === 1
             ? "bg-gray-100 text-gray-400 cursor-not-allowed dark:bg-gray-800 dark:text-gray-500"
             : "bg-gray text-gray-700 border-gray-300 hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800"
-        }`}
+          }`}
         title={t("previous")}
       >
         <ChevronLeft className="w-4 h-4" />
@@ -69,20 +69,11 @@ export default function Pagination({
           ) : (
             <button
               key={page}
-              onClick={() => {
-                if (page !== currentPage) {
-                  if (page < currentPage) {
-                    handlePreviousPage(page);
-                  } else {
-                    handleNextPage(page);
-                  }
-                }
-              }}
-              className={`cursor-pointer px-3 py-1 rounded-md text-sm font-medium transition-colors ${
-                page === currentPage
+              onClick={() => onPageChange(page)}  
+              className={`cursor-pointer px-3 py-1 rounded-md text-sm font-medium transition-colors ${page === currentPage
                   ? "bg-cyan-800 text-white dark:bg-cyan-600"
                   : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800"
-              }`}
+                }`}
             >
               {page}
             </button>
@@ -94,11 +85,10 @@ export default function Pagination({
       <button
         onClick={handleNextPage}
         disabled={currentPage === totalPages}
-        className={`p-2 rounded-md border text-sm transition-colors ${
-          currentPage === totalPages
+        className={`p-2 rounded-md border text-sm transition-colors ${currentPage === totalPages
             ? "bg-gray-100 text-gray-400 cursor-not-allowed dark:bg-gray-800 dark:text-gray-500"
             : "bg-white text-gray-700 border-gray-300 hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800"
-        }`}
+          }`}
         title={t("next")}
       >
         <ChevronRight className="w-4 h-4" />
